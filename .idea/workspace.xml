@@ -2,9 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e68157c8-74cf-43af-b8c7-78e0e7348014" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPSC2150.iml" beforeDir="false" afterPath="$PROJECT_DIR$/CPSC2150.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/cpsc2150/cars/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/cpsc2150/cars/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/cpsc2150/cars/CarApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/cpsc2150/cars/CarApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lab1/makefile" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +25,14 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -36,6 +45,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589315940612</updated>
       <workItem from="1589315943271" duration="76000" />
+      <workItem from="1589344257437" duration="93000" />
     </task>
     <servers />
   </component>
