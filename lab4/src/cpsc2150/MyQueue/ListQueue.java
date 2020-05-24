@@ -1,9 +1,21 @@
+/* Sterling Rich and Kellen Haas
+  CPSC 2150
+  Lab4
+  5/24/20
+ */
+
 package cpsc2150.MyQueue;
 
 import java.util.*;
 
-
 public class ListQueue implements IQueue {
+
+    /**
+     * @invariants 0 <= depth <= MAX_DEPTH and
+     * [depth = number of Integers in myQ]
+     * Correspondence IQueue = myQ
+     */
+
     //this time store the queue in a list
     //myQ.get(0) is the front of the queue
     private List<Integer> myQ;

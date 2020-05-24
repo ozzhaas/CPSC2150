@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e68157c8-74cf-43af-b8c7-78e0e7348014" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPSC2150.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +40,7 @@
       <workItem from="1589419251751" duration="470000" />
       <workItem from="1589767559272" duration="600000" />
       <workItem from="1589937661168" duration="592000" />
+      <workItem from="1590356594898" duration="526000" />
     </task>
     <servers />
   </component>
@@ -56,9 +56,9 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1589316017196" />
-    <state x="63" y="0" key="new project wizard" timestamp="1589316019169">
+    <state x="127" y="0" key="new project wizard" timestamp="1590357122648">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="63" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1589316019169" />
+    <state x="127" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1590357122648" />
   </component>
 </project>

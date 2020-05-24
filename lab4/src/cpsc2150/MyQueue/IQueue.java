@@ -1,3 +1,9 @@
+/* Sterling Rich and Kellen Haas
+  CPSC 2150
+  Lab4
+  5/24/20
+ */
+
 package cpsc2150.MyQueue;
 
 /**
@@ -11,9 +17,10 @@ public interface IQueue {
 
     /**
      * @pre Queue size() < MAX_DEPTH
+     * @param x The Integer being pushed into the end of the Queue
      * @post [x is in the last position of the Queue] and
      *      size() = #size() + 1
-     * @param x The Integer being pushed into the end of the Queue
+     * @return void
      */
     public void add(Integer x);
 
@@ -25,8 +32,10 @@ public interface IQueue {
     public Integer pop();
 
     /**
+     * @pre Queue size() > 0 and Queue size() < MAX_DEPTH
      * @post 0 <= size <= MAX_DEPTH
      * @return the number of Integers in the Queue
      */
     public int size();
 }
+

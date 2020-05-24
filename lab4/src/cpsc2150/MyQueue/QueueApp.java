@@ -1,8 +1,12 @@
+/* Sterling Rich and Kellen Haas
+  CPSC 2150
+  Lab4
+  5/24/20s
+ */
+
 package cpsc2150.MyQueue;
 
-import java.util.*;
-import java.lang.*;
-import java.io.*;
+import java.util.Scanner;
 
 public class QueueApp {
 
@@ -32,7 +36,17 @@ public class QueueApp {
         q.add(x);
         x = 12;
         q.add(x);
-        //Add the code to print the queue. After the code is finished,
-        //the queue should still contain all its values in order
+        /*
+        Add the code to print the queue. After the code is finished,
+        the queue should still contain all its values in order
+        */
+        System.out.println("Elements of the Queue: ");
+        System.out.println(q.size());
+        IQueue temp = q;
+        for (Integer k = 0; k < q.size(); k++) {
+            Integer holder = q.pop();
+            System.out.println(holder + " ");
+            temp.add(holder);
+        }
     }
 }

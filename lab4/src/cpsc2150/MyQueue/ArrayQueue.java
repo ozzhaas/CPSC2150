@@ -1,3 +1,9 @@
+/* Sterling Rich and Kellen Haas
+  CPSC 2150
+  Lab4
+  5/24/20
+ */
+
 package cpsc2150.MyQueue;
 
 public class ArrayQueue implements IQueue {
@@ -5,6 +11,7 @@ public class ArrayQueue implements IQueue {
     /**
      * @invariants 0 <= depth <= MAX_DEPTH and
      *          [depth = number of Integers in myQ]
+     * Correspondence IQueue = myQ
      */
 
     // where the data is stored. myQ[0] is the front of the queue
