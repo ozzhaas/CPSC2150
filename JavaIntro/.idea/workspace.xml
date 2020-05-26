@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ef447aa2-f74a-4381-90d5-de9845338831" name="Default Changelist" comment="5.12 11:46pm">
+      <change beforePath="$PROJECT_DIR$/../lab1/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../lab1/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/cpsc2150/cars/Car.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/cpsc2150/cars/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/cpsc2150/cars/CarApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/cpsc2150/cars/CarApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab1/makefile" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1bp56Z61sD7VZN4ao08AzsytfCZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../lab1" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager">
+    <configuration name="CarApp_Build" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="cpsc2150.cars.CarApp" />
+      <module name="JavaIntro" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ef447aa2-f74a-4381-90d5-de9845338831" name="Default Changelist" comment="" />
+      <created>1589316019272</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589316019272</updated>
+      <workItem from="1589316020692" duration="8397000" />
+      <workItem from="1589343626203" duration="39000" />
+    </task>
+    <task id="LOCAL-00001" summary="5.12 11:08pm">
+      <created>1589339751074</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1589339751075</updated>
+    </task>
+    <task id="LOCAL-00002" summary="5.12 11:15pm">
+      <created>1589339790482</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1589339790482</updated>
+    </task>
+    <task id="LOCAL-00003" summary="5.12 11:34pm">
+      <created>1589340882320</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1589340882320</updated>
+    </task>
+    <task id="LOCAL-00004" summary="5.12 11:43pm">
+      <created>1589341424382</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1589341424382</updated>
+    </task>
+    <task id="LOCAL-00005" summary="5.12 11:46pm">
+      <created>1589341584490</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1589341584490</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="5.12 11:08pm" />
+    <MESSAGE value="5.12 11:15pm" />
+    <MESSAGE value="5.12 11:34pm" />
+    <MESSAGE value="5.12 11:43pm" />
+    <MESSAGE value="5.12 11:46pm" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.12 11:46pm" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="122" y="0" key="#Project_Structure" timestamp="1589316568084">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="122" y="0" key="#Project_Structure/0.0.1280.680@0.0.1280.680" timestamp="1589316568084" />
+    <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1589318252308">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1589318252308" />
+    <state x="371" y="131" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589318250497">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="131" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1280.680@0.0.1280.680" timestamp="1589318250497" />
+    <state x="742" y="96" key="FileChooserDialogImpl" timestamp="1589343664600">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="742" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1589343664600" />
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1589342461772">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589342461772" />
+    <state width="1237" height="204" key="GridCell.Tab.0.center" timestamp="1589342461771">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1589342461771" />
+    <state width="1237" height="204" key="GridCell.Tab.0.left" timestamp="1589342461771">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1589342461771" />
+    <state width="1237" height="204" key="GridCell.Tab.0.right" timestamp="1589342461771">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1589342461771" />
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1589342461772">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1589342461772" />
+    <state width="1237" height="204" key="GridCell.Tab.1.center" timestamp="1589342461772">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1589342461772" />
+    <state width="1237" height="204" key="GridCell.Tab.1.left" timestamp="1589342461772">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1589342461772" />
+    <state width="1237" height="204" key="GridCell.Tab.1.right" timestamp="1589342461772">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="204" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1589342461772" />
+    <state x="150" y="0" key="SettingsEditor" timestamp="1589341392355">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="150" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1589341392355" />
+    <state x="234" y="74" key="Vcs.Push.Dialog.v2" timestamp="1589341595431">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="234" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1589341595431" />
+    <state width="646" height="346" key="XDebugger.FullValuePopup" timestamp="1589318781519">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="646" height="346" key="XDebugger.FullValuePopup/0.0.1280.680@0.0.1280.680" timestamp="1589318781519" />
+    <state x="448" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1589342344412">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="448" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1589342344412" />
+    <state x="370" y="129" key="git4idea.merge.GitPullDialog" timestamp="1589342361903">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="370" y="129" key="git4idea.merge.GitPullDialog/0.0.1280.680@0.0.1280.680" timestamp="1589342361903" />
+  </component>
+</project>
