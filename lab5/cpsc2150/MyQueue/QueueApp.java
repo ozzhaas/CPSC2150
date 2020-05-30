@@ -23,12 +23,9 @@ public class QueueApp {
 
         if (in.equals("1"))
             q = new ArrayQueue();
-        else if (in.equals("2"))
+        else 
             q = new ListQueue();
 
-        else
-            System.out.println("Error. Not an implementation option. Exiting program...");
-            System.exit(0);
 
         //menu
         String menuSelec = "10";
