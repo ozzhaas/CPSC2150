@@ -20,19 +20,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bfe9e64-a867-4854-be92-d5179116b496" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/MyQueueGeneric/AbsQueueGeneric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyQueueGeneric/ArrayQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyQueueGeneric/IQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyQueueGeneric/ListQueue.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyQueueGeneric/QueueApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyQueueGeneric/StringQueueApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/AbsQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/AbsQueueGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyQueue/AbsQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyQueue/ArrayQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/IQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyQueue/IQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/ListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyQueue/ListQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/QueueApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyQueue/QueueApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/StringQueueApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyQueue/StringQueueApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DockDockBuild.Settings">
+    <option name="advancedDockerSettings" value="" />
+    <option name="codePath" value="$PROJECT_DIR$" />
+    <option name="dockerPath" value="docker" />
+    <option name="mavenCachePath" value="C:\Users\Kellen Haas/.m2" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -44,6 +50,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="1.8" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="1cdpiBLQz0XqXXb8ns23nM7yzlB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -58,7 +72,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="fileTemplates" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -72,6 +89,7 @@
       <updated>1590868448339</updated>
       <workItem from="1590868449672" duration="343000" />
       <workItem from="1590868812992" duration="399000" />
+      <workItem from="1590939459553" duration="900000" />
     </task>
     <servers />
   </component>
@@ -91,13 +109,13 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="368" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590868875922">
+    <state x="368" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590939575066">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="368" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1590868875922" />
-    <state x="150" y="0" key="SettingsEditor" timestamp="1590869153478">
+    <state x="368" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1590939575066" />
+    <state x="150" y="0" key="SettingsEditor" timestamp="1590940032773">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="150" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1590869153478" />
+    <state x="150" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1590940032773" />
   </component>
 </project>
