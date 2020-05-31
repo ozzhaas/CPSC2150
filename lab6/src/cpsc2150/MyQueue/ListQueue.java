@@ -1,14 +1,14 @@
 /* Sterling Rich and Kellen Haas
   CPSC 2150
-  Lab5
-  5/26/20
+  Lab6
+  5/31/20
  */
 
 package cpsc2150.MyQueue;
 
 import java.util.*;
 
-public class ListQueue<T> extends AbsQueue<T> {
+public class ListQueue<T> extends cpsc2150.MyQueue.AbsQueue<T> {
 
     /**
      * @invariants 0 <= depth <= MAX_DEPTH and

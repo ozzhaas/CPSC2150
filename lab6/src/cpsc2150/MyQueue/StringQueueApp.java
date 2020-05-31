@@ -1,3 +1,10 @@
+/* Sterling Rich and Kellen Haas
+  CPSC 2150
+  Lab6
+  5/31/20
+ */
+
+
 package cpsc2150.MyQueue;
 
 import java.util.*;

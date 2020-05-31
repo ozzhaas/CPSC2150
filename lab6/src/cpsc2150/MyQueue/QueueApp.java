@@ -1,7 +1,7 @@
 /* Sterling Rich and Kellen Haas
   CPSC 2150
-  Lab4
-  5/24/20s
+  Lab6
+  5/31/20
  */
 
 package cpsc2150.MyQueue;

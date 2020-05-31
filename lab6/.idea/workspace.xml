@@ -20,14 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bfe9e64-a867-4854-be92-d5179116b496" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/AbsQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/AbsQueueGeneric.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyQueue/AbsQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyQueue/ArrayQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/IQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyQueue/IQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/ListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyQueue/ListQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/QueueApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyQueue/QueueApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyQueueGeneric/StringQueueApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyQueue/StringQueueApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueue/AbsQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/MyQueue/AbsQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueue/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/MyQueue/ArrayQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueue/IQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/MyQueue/IQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueue/ListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/MyQueue/ListQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueue/QueueApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/MyQueue/QueueApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MyQueue/StringQueueApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/MyQueue/StringQueueApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,12 +71,50 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kellen Haas\Desktop\CPSC2150\lab6\src" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.QueueApp">
+    <configuration name="QueueApp" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="cpsc2150.MyQueue.QueueApp" />
+      <module name="lab6" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringQueueApp" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="cpsc2150.MyQueue.StringQueueApp" />
+      <module name="lab6" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="clean" type="DockDockBuildRunConfiguration" factoryName="DockDockBuild" temporary="true">
+      <dockDockBuild makefileFilePath="$PROJECT_DIR$/src/makefile" dockerfileDir="C:\Users\Kellen Haas\Desktop\CPSC2150\lab6\src/docker" dockerImageUrl="" isDockerImage="" isDockerfile="" target="clean" envScriptPath="" arguments="">
+        <envs />
+      </dockDockBuild>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.StringQueueApp" />
+      <item itemvalue="Application.QueueApp" />
+      <item itemvalue="DockDockBuild.clean" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="DockDockBuild.clean" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -89,8 +128,16 @@
       <updated>1590868448339</updated>
       <workItem from="1590868449672" duration="343000" />
       <workItem from="1590868812992" duration="399000" />
-      <workItem from="1590939459553" duration="900000" />
+      <workItem from="1590939459553" duration="2059000" />
     </task>
+    <task id="LOCAL-00001" summary="5.31 11:52am">
+      <created>1590940431487</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1590940431487</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,11 +155,35 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="5.31 11:52am" />
+    <option name="LAST_COMMIT_MESSAGE" value="5.31 11:52am" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590941534401">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1590941534401" />
     <state x="368" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590939575066">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="368" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1590939575066" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1590941423830">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590941423830" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1590941423829">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590941423829" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1590941423829">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590941423829" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1590941423829">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590941423829" />
     <state x="150" y="0" key="SettingsEditor" timestamp="1590940032773">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
