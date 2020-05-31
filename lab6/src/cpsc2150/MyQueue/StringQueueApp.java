@@ -33,9 +33,9 @@ public class StringQueueApp {
 
         //Initialization type of Queue
         if (typeOfQ == 1)
-            q = new ArrayQueue();
+            q = new ArrayQueue<String>();
         else
-            q = new ListQueue();
+            q = new ListQueue<String>();
 
         //menu
         String menuSelec = "10";
