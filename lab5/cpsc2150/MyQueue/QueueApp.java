@@ -21,11 +21,12 @@ public class QueueApp {
         System.out.println("Enter 1 for Array implementation or 2 for List implementation:\n");
         String in = scan.nextLine();
 
-        if (in.equals("1"))
+        if (in.equals("1")){
             q = new ArrayQueue();
-        else 
+		}
+        else {
             q = new ListQueue();
-
+		}
 
         //menu
         String menuSelec = "10";
