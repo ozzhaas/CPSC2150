@@ -20,113 +20,107 @@ public class GameScreen {
     public static void main(String[] args) {
 
         System.out.println("Welcome to Extended Tic Tac Toe!\n");
-        System.out.println("Ready to play? (Y for yes or N for no)\n");
         Scanner scan = new Scanner(System.in);
-        String in = scan.nextLine();
-        if (in.equals("n") || in.equals("N")) {
-            System.out.println("See you next time! Exiting program...");
-            System.exit(0);
-        }
-        else {
-            GameBoard mainBoard = new GameBoard();
-            while (in.equals("y") || in.equals("Y")) {
-                System.out.println(mainBoard);
-                System.out.println("\nPlayer X, Please enter your ROW:");
-                String mainRow = scan.nextLine();
-                System.out.println("\nPlayer X, Please enter your COLUMN:");
-                String mainColumn = scan.nextLine();
-                BoardPosition mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
-                        Integer.parseInt(String.valueOf(mainColumn)), 'X');
-                mainBoard.placeMarker(mainPos, 'X');
 
-                while (!mainBoard.checkSpace(mainPos)) {
-                    System.out.println("That space is unavailable or out of bounds. Please pick again.\n");
+        GameBoard mainBoard = new GameBoard();
+
+        //Get Player X's first turn for the first game
+        BoardPosition mainPos = new BoardPosition(1,1);
+
+
+        //Loop for if checkSpace is false and the space is invalid
+        while (mainBoard.checkSpace(mainPos)) {
+            System.out.println(mainBoard);
+            System.out.println("\nPlayer X, Please enter your ROW:");
+            String mainRow = scan.nextLine();
+            System.out.println("\nPlayer X, Please enter your COLUMN:");
+            String mainColumn = scan.nextLine();
+            mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
+                    Integer.parseInt(String.valueOf(mainColumn)));
+            mainPos = move(scan, mainPos, 'X', mainBoard);
+
+            mainBoard.placeMarker(mainPos, 'X');
+            System.out.println("\nPlayer O, Please enter your ROW:");
+            mainRow = scan.nextLine();
+            System.out.println("\nPlayer O, Please enter your COLUMN:");
+            mainColumn = scan.nextLine();
+            mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
+                    Integer.parseInt(String.valueOf(mainColumn)));
+            mainPos = move(scan, mainPos, 'O', mainBoard);
+
+            mainBoard.placeMarker(mainPos, 'O');
+
+            //Check for a win or a draw after the first two turns
+            if (mainBoard.checkForWinner(mainPos) || mainBoard.checkForDraw(mainPos)) {
+                System.out.println("Congratulations Player " + mainPos.getPlayer() + "! You won!\n");
+
+                //Ask if the user wants to play again
+                System.out.println("Would you like to play again? (Y for yes or N for no)\n");
+                String in = scan.nextLine();
+
+                //PLAY AGAIN: New Game
+                while (in.equals("y") || in.equals("Y")) {
+                    //Create new blank GameBoard
+                    GameBoard nextBoard = new GameBoard();
+
+                    //Print the new GameBoard
+                    System.out.println(nextBoard);
+
+                    //Get Player X's first turn of next game
                     System.out.println("\nPlayer X, Please enter your ROW:");
                     mainRow = scan.nextLine();
                     System.out.println("\nPlayer X, Please enter your COLUMN:");
                     mainColumn = scan.nextLine();
                     mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
-                            Integer.parseInt(String.valueOf(mainColumn)), 'X');
-                }
-                mainBoard.placeMarker(mainPos, 'X');
+                            Integer.parseInt(String.valueOf(mainColumn)));
+                    mainBoard.placeMarker(mainPos, 'X');
 
-                if (mainBoard.checkForWinner(mainPos) || mainBoard.checkForDraw(mainPos)) {
-                    System.out.println("Congratulations Player " + mainPos.getPlayer() + "! You won!\n");
-                    System.out.println("Would you like to play again? (Y for yes or N for no)\n");
-                    in = scan.nextLine();
-                    if (in.equals("Y")) {
-                        GameBoard nextBoard = new GameBoard();
-                    }
-                    while (in.equals("y") || in.equals("Y")) {
-                        System.out.println(mainBoard);
-                        System.out.println("\nPlayer X, Please enter your ROW:");
-                        mainRow = scan.nextLine();
-                        System.out.println("\nPlayer X, Please enter your COLUMN:");
-                        mainColumn = scan.nextLine();
-                        mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
-                                Integer.parseInt(String.valueOf(mainColumn)), 'X');
+                    //Loop for if checkSpace is false and the space is invalid
+                    while (mainBoard.checkSpace(mainPos)) {
                         mainBoard.placeMarker(mainPos, 'X');
-
-                        while (!mainBoard.checkSpace(mainPos)) {
-                            System.out.println("That space is unavailable or out of bounds. Please pick again.\n");
-                            System.out.println("\nPlayer X, Please enter your ROW:");
-                            mainRow = scan.nextLine();
-                            System.out.println("\nPlayer X, Please enter your COLUMN:");
-                            mainColumn = scan.nextLine();
-                            mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
-                                    Integer.parseInt(String.valueOf(mainColumn)), 'X');
-                        }
-                        mainBoard.placeMarker(mainPos, 'X');
-                        System.out.println(mainBoard);
                         System.out.println("\nPlayer O, Please enter your ROW:");
                         mainRow = scan.nextLine();
                         System.out.println("\nPlayer O, Please enter your COLUMN:");
                         mainColumn = scan.nextLine();
                         mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
-                                Integer.parseInt(String.valueOf(mainColumn)), 'O');
-                        mainBoard.placeMarker(mainPos, 'O');
-                        while (!mainBoard.checkSpace(mainPos)) {
-                            System.out.println("That space is unavailable or out of bounds. Please pick again.\n");
-                            System.out.println("\nPlayer O, Please enter your ROW:");
-                            mainRow = scan.nextLine();
-                            System.out.println("\nPlayer O, Please enter your COLUMN:");
-                            mainColumn = scan.nextLine();
-                            mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
-                                    Integer.parseInt(String.valueOf(mainColumn)), 'O');
-                        }
-                    }
-                }
-                else {
-                        System.out.println(mainBoard);
-                        System.out.println("\nPlayer O, Please enter your ROW:");
-                        mainRow = scan.nextLine();
-                        System.out.println("\nPlayer O, Please enter your COLUMN:");
-                        mainColumn = scan.nextLine();
-                        mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
-                                Integer.parseInt(String.valueOf(mainColumn)), 'O');
+                                Integer.parseInt(String.valueOf(mainColumn)));
+
                         mainBoard.placeMarker(mainPos, 'O');
 
-                        while (!mainBoard.checkSpace(mainPos)) {
-                            System.out.println("That space is unavailable or out of bounds. Please pick again.\n");
-                            System.out.println("\nPlayer O, Please enter your ROW:");
-                            mainRow = scan.nextLine();
-                            System.out.println("\nPlayer O, Please enter your COLUMN:");
-                            mainColumn = scan.nextLine();
-                            mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
-                                    Integer.parseInt(String.valueOf(mainColumn)), 'O');
-//                            if mainBoard.checkSpace(mainPos) {
 
-
-
-                            //CONSIDER DOING A DO-WHILE LOOP
-
-
-
-                        }
-                        }
                     }
                 }
+            }
         }
     }
+
+
+    public static BoardPosition move(Scanner scan, BoardPosition playersMove, char player, GameBoard moveBoard) {
+        while (!moveBoard.checkSpace(playersMove)) {
+            System.out.println("That space is unavailable or out of bounds. Please pick again.\n");
+            System.out.println("\nPlayer " + player + " , Please enter your ROW:");
+            String row = scan.nextLine();
+            System.out.println("\nPlayer " + player + " , Please enter your ROW:");
+            String column = scan.nextLine();
+            BoardPosition pos = new BoardPosition(Integer.parseInt(String.valueOf(row)),
+                    Integer.parseInt(String.valueOf(column)));
+            if (!moveBoard.checkSpace(pos)) {
+                System.out.println("That space is unavailable or out of bounds. Please pick again.\n");
+                System.out.println("\nPlayer " + player + " , Please enter your ROW:");
+                row = scan.nextLine();
+                System.out.println("\nPlayer " + player + " , Please enter your ROW:");
+                column = scan.nextLine();
+                pos = new BoardPosition(Integer.parseInt(String.valueOf(row)),
+                        Integer.parseInt(String.valueOf(column)));
+            }
+            else {
+                return pos;
+            }
+        }
+        return playersMove;
+    }
+
+}
+
 
 

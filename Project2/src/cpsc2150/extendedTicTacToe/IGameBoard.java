@@ -148,11 +148,88 @@ public interface IGameBoard {
         public default boolean checkDiagonalWin(BoardPosition lastPos, char player) {
             //checks to see if the last marker placed resulted in 5 in a row diagonally.
             // Returns true if it does, otherwise false
+            int countInARow = 0;
+            int secondCountInARow = 0;
+            int row = lastPos.getRow();
+            int col = lastPos.getColumn();
+
+            //First scan from top left to bottom right
+            while (countInARow < 5 && row >= 0 && col >= 0) {
+                if (ticTacBoard[lastPos.getRow()][lastPos.getColumn()] == player) {
+                    countInARow++;
+                }
+                else {
+                    break;
+                }
+                //Decrement to go diagonally down to bottom right
+                row--;
+                col--;
+            }
+
+            //Next scan from top right to bottom left
+            while (secondCountInARow < 5 && row >= 0 && col < MAX_LEN) {
+                if (countInARow >= 5) {
+                    break;
+                }
+                if (ticTacBoard[lastPos.getRow()][lastPos.getColumn()] == player) {
+                    secondCountInARow++;
+                }
+                else {
+                    break;
+                }
+                //Increment the column and decrement the row to go diagonally down from
+                //the top right to the bottom left
+                row--;
+                col++;
+            }
+
+            //Next scan from the bottom right to the top left
+            while (row < MAX_LEN && col < MAX_LEN && countInARow < 5) {
+                if (ticTacBoard[lastPos.getRow()][lastPos.getColumn()] == player) {
+                    countInARow++;
+                }
+                else {
+                    break;
+                }
+                //Increment the column and the rows to go diagonally up from the bottom
+                //right to the top left
+                row++;
+                col++;
+            }
 
 
+            //Next scan from the bottom left to the top right
+            while (row < MAX_LEN && col >= 0 && countInARow < 5) {
+                if (secondCountInARow >= 5) {
+                    break;
+                }
+                if (ticTacBoard[lastPos.getRow()][lastPos.getColumn()] == player) {
+                    secondCountInARow++;
+                }
+                else {
+                    break;
+                }
+                //Increment the row and decrement the columns to go diagonally
+                //up from the bottom left to the top right
+                row++;
+                col--;
+            }
+            return (countInARow == 5 || secondCountInARow == 5);
+        }
 
+
+    public default char whatsAtPos(BoardPosition pos) {
+        return ticTacBoard[pos.getRow()][pos.getColumn()];
+    }
+
+    public default boolean isPlayerAtPos(BoardPosition pos, char player) {
+        if (ticTacBoard[pos.getRow()][pos.getColumn()] == player) {
+            return true;
+        }
+        else {
             return false;
         }
+    }
 
     }
 

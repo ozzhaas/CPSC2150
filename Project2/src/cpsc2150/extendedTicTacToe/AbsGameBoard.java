@@ -28,15 +28,13 @@ public abstract class AbsGameBoard implements IGameBoard {
 
         gameBoardStr = gameBoardStr + "\n";
 
-
         //Create the rows
         for (int i = 0; i <= strRow; i++) {
             //Label the row indexes
             gameBoardStr = gameBoardStr + "\t" + i + " " + '|' + " ";
             for (int c = 0; c <= strCol; c++) {
-                gameBoardStr = gameBoardStr + " " + ticTacBoard[i][c] + " " + '|' + " ";
-                System.out.println("GAMEBOARD TEST\n");
-                System.out.println(ticTacBoard[i][c]);
+                BoardPosition stringPos = new BoardPosition(i, c);
+                gameBoardStr = gameBoardStr + whatsAtPos(stringPos) + " " + '|' + " ";
             }
             gameBoardStr = gameBoardStr + "\n";
         }
