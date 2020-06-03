@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e68157c8-74cf-43af-b8c7-78e0e7348014" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Project2/src/cpsc2150/extendedTicTacToe/BoardPosition.java" beforeDir="false" afterPath="$PROJECT_DIR$/Project2/src/cpsc2150/extendedTicTacToe/BoardPosition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Lab7/src/cpsc2150/banking/Mortgage.java" beforeDir="false" afterPath="$PROJECT_DIR$/Lab7/src/cpsc2150/banking/Mortgage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/AbsGameBoard UML Class Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/BoardPosition UML Class Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/BoardPosition getColumn Activity Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/BoardPosition getRow Activity Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/GameBoard UML Class Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/GameBoard checkForDraw Activity Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/GameBoard checkForVerticalWin Activity Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/GameBoard checkForWinner Activity Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/GameBoard checkHorizontalWin Activity Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/GameBoard checkSpace Activity Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/GameBoard isPlayerAtPos Activity Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/GameBoard placeMarker Activity Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/GameBoard whatsAtPos Activity Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/GameScreen Activity Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/GameScreen UML Class Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/IGameBoard UML Class Diagram.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/Project2.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/Project2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2/Project2.pdf" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +61,7 @@
       <workItem from="1589937661168" duration="592000" />
       <workItem from="1590356594898" duration="526000" />
       <workItem from="1590973271896" duration="25000" />
+      <workItem from="1591221583514" duration="12000" />
     </task>
     <servers />
   </component>

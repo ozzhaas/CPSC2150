@@ -1,6 +1,6 @@
 /* Sterling Rich and Kellen Haas
   CPSC 2150
-  Lab7
+  lab7
   6/3/20
  */
 
@@ -61,15 +61,15 @@ public interface ICustomer {
      *
      * @return the customer's yearly income
      *
-     * @ensures getIncome = income
+     * @post getIncome = income
      */
     double getIncome();
 
     /**
      *
      * @return the customer's credit score
-     * @requires this != null
-     * @ensures getCreditScore = creditScore
+     * @pre this != null
+     * @post getCreditScore = creditScore
      */
     int getCreditScore();
 
