@@ -68,6 +68,7 @@ public interface IQueue<T> {
         int size = size()+1;
 
         //temporary array to store the Queue
+		@SuppressWarnings("unchecked")
         T [] tempQ = (T[]) new Object [size];
 
         //Ts from 0-pos into tempQ
@@ -102,6 +103,7 @@ public interface IQueue<T> {
         T rem;
 
         //temporary array to store the Queue
+		@SuppressWarnings("unchecked")
         T [] tempQ = (T[]) new Object [size];
 
         //Ts from 0-pos into tempQ
@@ -137,6 +139,7 @@ public interface IQueue<T> {
         T atPos;
 
         //temporary array to store the Queue
+		@SuppressWarnings("unchecked")
         T [] tempQ = (T[]) new Object [size];
 
         //Ts from 0-pos into tempQ

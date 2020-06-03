@@ -15,7 +15,7 @@ public class ArrayQueue<T> extends AbsQueue<T> {
      */
 
     // where the data is stored. myQ[0] is the front of the queue
-    private T [] myQ;
+	private T [] myQ;
 
     //tracks how many items in the queue
     // also used to find the end of the queue
@@ -25,7 +25,8 @@ public class ArrayQueue<T> extends AbsQueue<T> {
      * @post myQ size = MAX_DEPTH and depth = 0
      */
     public ArrayQueue() {
-        myQ = (T[]) new Object [MAX_DEPTH];
+		@SuppressWarnings("unchecked")
+		T [] myQ = (T[]) new Object [MAX_DEPTH];
         depth = 0;
     }
 
