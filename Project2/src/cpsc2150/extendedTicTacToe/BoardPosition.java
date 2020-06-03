@@ -1,9 +1,11 @@
 package cpsc2150.extendedTicTacToe;
+import java.lang.*;
+
 
 public class BoardPosition {
     private int Row;
     private int Column;
-    private String Player;
+    private char Player;
 
     /**
      * BoardPosition Constructor
@@ -17,7 +19,7 @@ public class BoardPosition {
      *       then used BoardPosition as a parameter for its methods
      *       to mark the various valid positions on the board.
      */
-    public BoardPosition(int r, int c, String playerLetter) {
+    public BoardPosition(int r, int c, char playerLetter) {
         Row = r;
         Column = c;
         Player = playerLetter;
@@ -37,7 +39,7 @@ public class BoardPosition {
     /**
      * @return the player's associated character
      */
-    public String getPlayer() {return String.valueOf(Player);}
+    public char getPlayer() {return Player;}
 
 
     /**
@@ -50,20 +52,12 @@ public class BoardPosition {
 
     @Override
     public boolean equals(Object obj) {
-        if (!(obj instanceof BoardPosition)) {
-            return false;
-        }
-        BoardPosition b = (BoardPosition) obj;
-        if ((this.getPlayer().equals(b.getPlayer())) && this.getRow() == b.getRow()) {
-            return true;
-        }
-        else {
+        if (obj instanceof BoardPosition) {
+            BoardPosition b = (BoardPosition) obj;
+            return this.getPlayer()==(b.getPlayer()) && this.getRow() == b.getRow() && this.getColumn() == b.getColumn();
+        } else {
             return false;
         }
     }
-
-
-
-
 }
 
