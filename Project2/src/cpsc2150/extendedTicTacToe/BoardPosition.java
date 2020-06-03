@@ -3,7 +3,7 @@ package cpsc2150.extendedTicTacToe;
 public class BoardPosition {
     private int Row;
     private int Column;
-    private char Player;
+    private String Player;
 
     /**
      * BoardPosition Constructor
@@ -17,7 +17,7 @@ public class BoardPosition {
      *       then used BoardPosition as a parameter for its methods
      *       to mark the various valid positions on the board.
      */
-    public BoardPosition(int r, int c, char playerLetter) {
+    public BoardPosition(int r, int c, String playerLetter) {
         Row = r;
         Column = c;
         Player = playerLetter;
@@ -37,7 +37,7 @@ public class BoardPosition {
     /**
      * @return the player's associated character
      */
-    public int getPlayer() {return Player;}
+    public String getPlayer() {return String.valueOf(Player);}
 
 
     /**
@@ -47,8 +47,21 @@ public class BoardPosition {
      * @return
      * @post
      */
+
     @Override
-    public boolean equals(Object pos) {return true;}
+    public boolean equals(Object obj) {
+        if (!(obj instanceof BoardPosition)) {
+            return false;
+        }
+        BoardPosition b = (BoardPosition) obj;
+        if ((this.getPlayer().equals(b.getPlayer())) && this.getRow() == b.getRow()) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
 
 
 
