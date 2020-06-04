@@ -25,12 +25,6 @@ public class MortgageApp {
 
         ICustomer c = new Customer(debt, inc, score, name);
         c.applyForLoan(dp, cost, y);
-
-
-
-
         System.out.println(c.toString());
-
-
     }
 }

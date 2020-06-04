@@ -53,39 +53,37 @@ public interface IMortgage {
     int MAX_YEARS = 30;
     double PREFERRED_PERCENT_DOWN = .2;
     double MIN_PERCENT_DOWN = .035; // not a constraint, affects loan approval
+
+
     /**
-     *
      * @return true if the loan is approved, false otherwise
-     *
      * @post loanApproved iff (Rate*12 < RATE_TOO_HIGH and PercentDown >= MIN_PERCENT_DOWN and DebtToIncomeRatio <= DTOITOOHIGH)
      */
     boolean loanApproved();
 
+
     /**
-     *
      * @return the monthly payment on the loan
-     *
      * @post getPayment = Payment
      */
     double getPayment();
 
+
     /**
-     *
      * @return the interest rate (apr) for this customer
-     * @pre:
      * @post getRate = Rate * 12
      */
     double getRate();
 
+
     /**
-     *
      * @return the principal amount of the loan
      * @post getPrincipal = Principal
      */
     double getPrincipal();
 
+
     /**
-     *
      * @return the number of years the loan is for
      * @post getYears = Years
      */
