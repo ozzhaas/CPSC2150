@@ -1,82 +1,64 @@
 package cpsc2150.extendedTicTacToe;
 
+
 import java.util.Objects;
 
-/**
- *************************EXAMPLE*****************************
- * This object will hold the information about a mortgage, and will handle all calculations for interest rate and monthly payments
- * @Defines: Payment: R - The monthly payment on the mortgage
- *          Rate: R - the interest rate per monthly period on the loan
- *          Customer: - Every loan must have an associated customer
- *          DebtToIncomeRatio: R - The ratio of the Customer's total monthly debt payments (including mortgage) to their monthly income
- *          Principal: R - The amount of the loan
- *          NumberOfPayments: Z - total number of payments the customer will make on the loan
- *          PercentDown : R - The percent of the house cost covered by the down payment
- *
- * @Initialization Ensures: [Rate is calculated based on the BASERATE, the years for the loan, and the PercentDown]
- *                          [Payment is calculated]
- *
- * @Constraints: Payment = (Rate * Principal) / (1-(1+Rate)^ -NumberOfPayments)
- *               0 <= Rate <= 1
- *               0 < DebtToIncomeRatio
- *               MIN_YEARS * 12 <= NumberOfPayments <= MAX_YEARS * 12
- *               0 < Principal
- *               0 <= PercentDown < 1
- *
- *
- *
- */
-
-public interface IGameBoard {
-
-        public static final int MAX_LEN = 90;
-        public static final char[][] ticTacBoard = new char[MAX_LEN][MAX_LEN];
-        public static final int count = 0;
-
+public class GameBoardMem extends AbsGameBoard {
+    private char[][] ticTacBoard;
+    private static final int MAX_LEN = 8;
+    private int count = 0;
+    private int numToWin = 5;
 
         /**
-         * @param pos [the position the user chose] and [must have both a Row and a Column value]
-         * @pre [The user chose a position that is an integer between 0 and 7]
-         * @return (True [if pos is empty and in the bounds of the board]) and
-         *         (False [if pos is out of bounds or already taken])
-         * @post [The position pos is a valid choice]
+         * @pre [the user wants to play Extended Tic Tac Toe]
+         * @post [a game board is created and is empty and ready for the users to play]
          */
-        default boolean checkSpace(cpsc2150.extendedTicTacToe.BoardPosition pos) {
-            //returns true if the position specified in pos is available,
-            //false otherwise. If a space is not in bounds, then it is not available
-            if ((pos.getRow() >= 0) && (pos.getRow() < MAX_LEN) && (pos.getColumn() >= 0) && (pos.getColumn() < MAX_LEN)) {
-                return true;
-            }
-            else {
-                return false;
+        public GameBoardMem() {
+            //Create the game board//
+            ticTacBoard = new char [MAX_LEN][MAX_LEN];
+
+            //Initialize all positions on the board to blank space//
+            for (int i = 0; i < MAX_LEN; i++) {
+                for (int j = 0; j < MAX_LEN; j++) {
+                    ticTacBoard[i][j] = ' ';
+                }
             }
         }
 
-        /**
-         * @param marker = [position to place the character player on the game board]
-         * @pre [The position passed in as marker must be valid and if it is not, then this
-         *      function shouldn't be called]
-         * @return void
-         * @post [Makes sure to place a marker in a position that is not already taken or is invalid]
-         */
-        public void placeMarker(BoardPosition marker, char player);
+
+        public boolean checkSpace(BoardPosition pos) {
+            //returns true if the position specified in pos is available,
+            //false otherwise. If a space is not in bounds, then it is not available
+            System.out.println("Checking space " + pos.getRow() + ", " + pos.getColumn() + "; " + pos.getPlayer() + "\n");
+            if ((pos.getRow() >= 0) && (pos.getRow() < MAX_LEN) && (pos.getColumn() >= 0) && (pos.getColumn() < MAX_LEN)) {
+                if (ticTacBoard[pos.getRow()][pos.getColumn()] == ' ') {
+                    System.out.println("Space is valid continuing...\n");
+                    return true;
+                } else {
+                    System.out.println("Space " + pos.getRow() + ", " + pos.getColumn() + "; " + pos.getPlayer() + " is invalid exiting...\n");
+                    return false;
+                }
+            }
+            return false;
+        }
 
 
-        /**
-         * @param lastPos = [the last position placed on the game board]
-         * @pre [The position passed in must be valid and in bounds before it can
-         *      be checked for a potential winner]
-         * @return (True [if lastPos won the game]) or (False [if lastPos didn't win the game])
-         * @post [Will determine if there is a winner from only the specific position. Since
-         *       it will be called every time a game piece is placed, you can assume it would've
-         *       caught a previous win if there was one.]
-         */
-        default boolean checkForWinner(BoardPosition lastPos) {
+        public void placeMarker(BoardPosition marker, char player) {
+            //places the character in marker on the position specified by marker,
+            //and should not be called if the space is not available.
+            ticTacBoard[marker.getRow()][marker.getColumn()] = player;
+            count++;
+
+        }
+
+
+        public boolean checkForWinner(BoardPosition lastPos) {
             //this function will check to see if the lastPos placed resulted in
             //a winner. If so it will return true, otherwise false.
-            if (((checkHorizontalWin(lastPos, lastPos.getPlayer()))) ||
-                    (checkDiagonalWin(lastPos, lastPos.getPlayer())) ||
-                    (checkVerticalWin(lastPos, lastPos.getPlayer()))) {
+            System.out.println("checkForWinner is being called...\n");
+            if (((checkHorizontalWin(lastPos, lastPos.getPlayer())))
+                    || (checkDiagonalWin(lastPos, lastPos.getPlayer()))
+                    || (checkVerticalWin(lastPos, lastPos.getPlayer()))) {
                 return true;
             }
             return false;
@@ -86,23 +68,21 @@ public interface IGameBoard {
         /**
          * @param lastPos
          * @pre [Assumes that all positions are placed in a valid fashion]
-         * @return (True [if the game is a tie]) or (False [if the game is not a tie]
+         * @return (True [if the game is a tie] or False [if the game is not a tie])
          * @post [If true, there is a tie]
          */
-        default boolean checkForDraw(BoardPosition lastPos) {
+
+        @Override
+        public boolean checkForDraw(BoardPosition lastPos) {
             //this function will check to see if the game has resulted in a tie.
             //A game is tied if there are no free board positions remaining.
             //It will return true if the game is tied, and false otherwise.
-            if (!checkForWinner(lastPos)) {
-                for (int i = 0; i < lastPos.getRow(); i++) {
-                    for (int j = 0; j < lastPos.getColumn(); j++) {
-                        if (!Objects.equals(ticTacBoard[lastPos.getRow()][lastPos.getColumn()], " ")) {
-                            return false;
-                        }
-                    }
-                }
+            if (count == 64) {
+                return true;
             }
-            return true;
+            else {
+                return false;
+            }
         }
 
         /**
@@ -113,7 +93,7 @@ public interface IGameBoard {
          *         (False [if the move lastPos did not win the game horizontally])
          * @post [The specified Row of the board is checked for a win]
          */
-        default boolean checkHorizontalWin(BoardPosition lastPos, char player) {
+        public boolean checkHorizontalWin(BoardPosition lastPos, char player) {
             //checks to see if the last marker placed resulted in 5 in a row horizontally
             //by checking if it matches the other 4 players in a sequence next to it
             //Returns true if it does, otherwise false
@@ -123,7 +103,7 @@ public interface IGameBoard {
             //Loop through all of the columns holding the row (in which the marker was
             //just placed) constant.
             int i = 0;
-            while (i < MAX_LEN && numOfHSpots < 6) {
+            while (i < MAX_LEN && numOfHSpots < numToWin) {
                 if (Objects.equals(ticTacBoard[currentRow][i], player)) {
                     numOfHSpots++;
                 }
@@ -140,7 +120,7 @@ public interface IGameBoard {
          *         (False [if the move lastPos did not win the game vertically])
          * @post [The specified Column of the board is checked for a win]
          */
-        default boolean checkVerticalWin(BoardPosition lastPos, char player) {
+        public boolean checkVerticalWin(BoardPosition lastPos, char player) {
             //checks to see if the last marker placed resulted in 5 in a row vertically.
             //Returns true if it does, otherwise false
             int currentColumn = lastPos.getColumn();
@@ -156,6 +136,16 @@ public interface IGameBoard {
                 i++;
             }
 
+            i = 0;
+            while (i >= 0 && i < lastPos.getRow()) {
+                if (Objects.equals(ticTacBoard[i][currentColumn], player)) {
+                    numOfVSpots++;
+                }
+                i--;
+            }
+            if (numOfVSpots == 5) {
+                System.out.println("Winner!\n");
+            }
             return numOfVSpots == 5;
         }
 
@@ -167,7 +157,7 @@ public interface IGameBoard {
          *         (False [if the move lastPos did not win the game diagonally])
          * @post [The specified diagonal of the board is checked for a win]
          */
-        default boolean checkDiagonalWin(BoardPosition lastPos, char player) {
+        public boolean checkDiagonalWin(BoardPosition lastPos, char player) {
             //checks to see if the last marker placed resulted in 5 in a row diagonally.
             // Returns true if it does, otherwise false
             int countInARow = 0;
@@ -239,17 +229,18 @@ public interface IGameBoard {
             return (countInARow == 5 || secondCountInARow == 5);
         }
 
-
-    public char whatsAtPos(BoardPosition pos);
-
-    default boolean isPlayerAtPos(BoardPosition pos, char player) {
-        if (ticTacBoard[pos.getRow()][pos.getColumn()] == player) {
-            return true;
+        public char whatsAtPos(BoardPosition pos) {
+            return ticTacBoard[pos.getRow()][pos.getColumn()];
         }
-        else {
-            return false;
-        }
-    }
 
-    }
+        public boolean isPlayerAtPos(BoardPosition pos, char player) {
+            if (ticTacBoard[pos.getRow()][pos.getColumn()] == player) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+}
 

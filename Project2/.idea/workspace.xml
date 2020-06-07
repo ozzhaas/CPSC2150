@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8759c838-407b-474a-b39b-04c9810838b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Project2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cpsc2150/cpsc2150.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameBoardMem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../lab7/lab7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/AbsGameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/AbsGameBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/IGameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/IGameBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/AbsGameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/AbsGameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/IGameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/IGameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Project3/Homework3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Project3/Homework3.pdf" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1craURYGHNV6Ho3m7GY0Orka4wG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration name="GameScreenApp" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="cpsc2150.extendedTicTacToe.GameScreen" />
+      <module name="Project2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8759c838-407b-474a-b39b-04c9810838b2" name="Default Changelist" comment="" />
+      <created>1591289181214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591289181214</updated>
+      <workItem from="1591289182500" duration="2703000" />
+      <workItem from="1591404848123" duration="604000" />
+      <workItem from="1591462109000" duration="4810000" />
+      <workItem from="1591484923897" duration="5597000" />
+      <workItem from="1591490620137" duration="6183000" />
+      <workItem from="1591518299049" duration="2012000" />
+      <workItem from="1591542910986" duration="7069000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591291500559">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1591291500559" />
+    <state x="767" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1591518783809">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="767" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1591518783809" />
+    <state width="1237" height="429" key="GridCell.Tab.0.bottom" timestamp="1591550487344">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="429" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
+    <state width="1237" height="429" key="GridCell.Tab.0.center" timestamp="1591550487344">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="429" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
+    <state width="1237" height="429" key="GridCell.Tab.0.left" timestamp="1591550487344">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="429" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
+    <state width="1237" height="429" key="GridCell.Tab.0.right" timestamp="1591550487344">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="429" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
+    <state width="1237" height="429" key="GridCell.Tab.1.bottom" timestamp="1591550487344">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="429" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
+    <state width="1237" height="429" key="GridCell.Tab.1.center" timestamp="1591550487344">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="429" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
+    <state width="1237" height="429" key="GridCell.Tab.1.left" timestamp="1591550487344">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="429" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
+    <state width="1237" height="429" key="GridCell.Tab.1.right" timestamp="1591550487344">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="429" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
+    <state x="298" y="151" key="run.anything.popup" timestamp="1591544094572">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="298" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1591544094572" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1591489770529">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1591489770529" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameScreen.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameScreen.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

@@ -1,5 +1,6 @@
 package cpsc2150.extendedTicTacToe;
 
+
 public abstract class AbsGameBoard implements IGameBoard {
 
     /**
@@ -33,7 +34,8 @@ public abstract class AbsGameBoard implements IGameBoard {
             //Label the row indexes
             gameBoardStr = gameBoardStr + "\t" + i + " " + '|' + " ";
             for (int c = 0; c <= strCol; c++) {
-                BoardPosition stringPos = new BoardPosition(i, c);
+                BoardPosition stringPos;
+                stringPos = new BoardPosition(i, c);
                 gameBoardStr = gameBoardStr + whatsAtPos(stringPos) + " " + '|' + " ";
             }
             gameBoardStr = gameBoardStr + "\n";

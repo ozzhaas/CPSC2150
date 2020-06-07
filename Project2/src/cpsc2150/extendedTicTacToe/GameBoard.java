@@ -1,6 +1,7 @@
 package cpsc2150.extendedTicTacToe;
 
-import com.sun.org.apache.bcel.internal.classfile.ClassParser;
+
+import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
 import java.util.Objects;
 
@@ -8,6 +9,7 @@ public class GameBoard extends AbsGameBoard implements IGameBoard {
 	private char[][] ticTacBoard;
 	private static final int MAX_LEN = 8;
 	private int count = 0;
+	private int numToWin = 5;
 
 
 	/**
@@ -30,15 +32,20 @@ public class GameBoard extends AbsGameBoard implements IGameBoard {
 	public boolean checkSpace(BoardPosition pos) {
 		//returns true if the position specified in pos is available,
 		//false otherwise. If a space is not in bounds, then it is not available
+		System.out.println("Checking space " + pos.getRow() + ", " + pos.getColumn() + "; " + pos.getPlayer() + "\n");
 		if ((pos.getRow() >= 0) && (pos.getRow() < MAX_LEN) && (pos.getColumn() >= 0) && (pos.getColumn() < MAX_LEN)) {
-			return true;
+			if (whatsAtPos(pos) == ' ') {
+				System.out.println("Space is valid continuing...\n");
+				return true;
+			} else {
+				System.out.println("Space " + pos.getRow() + ", " + pos.getColumn() + "; " + pos.getPlayer() + " is invalid exiting...\n");
+				return false;
+			}
 		}
-		else {
-			return false;
-		}
+		return false;
 	}
 
-
+	@Override
 	public void placeMarker(BoardPosition marker, char player) {
 		//places the character in marker on the position specified by marker,
 		//and should not be called if the space is not available.
@@ -51,9 +58,17 @@ public class GameBoard extends AbsGameBoard implements IGameBoard {
 	public boolean checkForWinner(BoardPosition lastPos) {
 		//this function will check to see if the lastPos placed resulted in
 		//a winner. If so it will return true, otherwise false.
-		if (((checkHorizontalWin(lastPos, lastPos.getPlayer())))
-				|| (checkDiagonalWin(lastPos, lastPos.getPlayer()))
-				|| (checkVerticalWin(lastPos, lastPos.getPlayer()))) {
+		System.out.println("checkForWinner is being called...\n");
+		boolean horizontal = false;
+		boolean vertical = false;
+		boolean diagonal = false;
+
+		horizontal = checkHorizontalWin(lastPos, lastPos.getPlayer());
+		vertical = checkVerticalWin(lastPos, lastPos.getPlayer());
+		diagonal = checkDiagonalWin(lastPos, lastPos.getPlayer());
+
+		if (horizontal || vertical || diagonal) {
+			System.out.println("Winner is true...\n");
 			return true;
 		}
 		return false;
@@ -92,19 +107,51 @@ public class GameBoard extends AbsGameBoard implements IGameBoard {
 		//checks to see if the last marker placed resulted in 5 in a row horizontally
 		//by checking if it matches the other 4 players in a sequence next to it
 		//Returns true if it does, otherwise false
-		int currentRow = lastPos.getRow();
-		int numOfHSpots = 0;
+		System.out.println("Check for horizontal win is being called...");
+		int numOfHMatches = 0;
+		int row = lastPos.getRow();
+		//Move the column left one space
+		int column = lastPos.getColumn() - 1;
 
 		//Loop through all of the columns holding the row (in which the marker was
 		//just placed) constant.
-		int i = 0;
-		while (i < MAX_LEN && numOfHSpots < 6) {
-			if (Objects.equals(ticTacBoard[currentRow][i], player)) {
-				numOfHSpots++;
+		BoardPosition newPos = new BoardPosition(row, column);
+		while (column >= 0 && numOfHMatches < numToWin) {
+			System.out.println("Position to compare: " + row + ", " + column + "\n");
+			if (whatsAtPos(newPos) == whatsAtPos(lastPos)) {
+				System.out.println("Test if statement in HWin decrement...\n");
+				numOfHMatches++;
+				System.out.println("We've got " + numOfHMatches + " matches!\n");
+				if (numOfHMatches >= 5) {
+					return true;
+				}
 			}
-			i++;
+			else {
+				System.out.println("Exiting the loop...\n");
+				break;}
+			column--;
 		}
-		return numOfHSpots == 5;
+
+		//Now move the column to the right one space
+		column = lastPos.getColumn() + 1;
+		newPos = new BoardPosition(row, column);
+		while (column < MAX_LEN && numOfHMatches < numToWin) {
+			System.out.println("Position to compare: " + row + ", " + column + "\n");
+			System.out.println("Player & lastPos: " + player + ", " + lastPos + "\n");
+			if (whatsAtPos(newPos) == whatsAtPos(lastPos)) {
+				System.out.println("Test if statement in HWin increment...\n");
+				numOfHMatches++;
+				System.out.println("We've got " + numOfHMatches + " matches!\n");
+				if (numOfHMatches >= 5) {
+					return true;
+				}
+			}
+			else {
+				System.out.println("Exiting the loop...\n");
+				break;}
+			column++;
+		}
+		return false;
 	}
 
 
@@ -120,6 +167,8 @@ public class GameBoard extends AbsGameBoard implements IGameBoard {
 		//Returns true if it does, otherwise false
 		int currentColumn = lastPos.getColumn();
 		int numOfVSpots = 0;
+		System.out.println("Check for vertical win is being called...");
+
 
 		//Loop through all of the columns holding the row (in which the marker was
 		//just placed) constant.
@@ -131,6 +180,16 @@ public class GameBoard extends AbsGameBoard implements IGameBoard {
 			i++;
 		}
 
+		i = 0;
+		while (i >= 0 && i < lastPos.getRow()) {
+			if (Objects.equals(ticTacBoard[i][currentColumn], player)) {
+				numOfVSpots++;
+			}
+			i--;
+		}
+		if (numOfVSpots == 5) {
+			System.out.println("Winner!\n");
+		}
 		return numOfVSpots == 5;
 	}
 
@@ -149,6 +208,8 @@ public class GameBoard extends AbsGameBoard implements IGameBoard {
 		int secondCountInARow = 0;
 		int row = lastPos.getRow();
 		int col = lastPos.getColumn();
+
+		System.out.println("Check for Diagonal win is being called...");
 
 		//First scan from top left to bottom right
 		while (countInARow < 5 && row >= 0 && col >= 0) {
