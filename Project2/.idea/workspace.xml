@@ -20,23 +20,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8759c838-407b-474a-b39b-04c9810838b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Project2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cpsc2150/cpsc2150.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameBoardMem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab7/lab7.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/AbsGameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/AbsGameBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameScreen.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/IGameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/IGameBoard.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/AbsGameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/AbsGameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/IGameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/IGameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Project3/Homework3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Project3/Homework3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/cpsc2150/MyQueue/AbsQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/cpsc2150/MyQueue/ArrayQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/cpsc2150/MyQueue/IQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/cpsc2150/MyQueue/ListQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/cpsc2150/MyQueue/QueueApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/cpsc2150/MyQueue/StringQueueApp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/cpsc2150/MyQueue/TestArrayQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/cpsc2150/MyQueue/TestListQueue.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,6 +89,7 @@
       <workItem from="1591490620137" duration="6183000" />
       <workItem from="1591518299049" duration="2012000" />
       <workItem from="1591542910986" duration="7069000" />
+      <workItem from="1591563629137" duration="43000" />
     </task>
     <servers />
   </component>
