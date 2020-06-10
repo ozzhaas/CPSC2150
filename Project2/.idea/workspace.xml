@@ -20,15 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8759c838-407b-474a-b39b-04c9810838b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../src/cpsc2150/MyQueue/AbsQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/cpsc2150/MyQueue/ArrayQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/cpsc2150/MyQueue/IQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/cpsc2150/MyQueue/ListQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/cpsc2150/MyQueue/QueueApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/cpsc2150/MyQueue/StringQueueApp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/cpsc2150/MyQueue/TestArrayQueue.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/cpsc2150/MyQueue/TestListQueue.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameScreen.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +55,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
   <component name="RunManager">
@@ -90,6 +87,8 @@
       <workItem from="1591518299049" duration="2012000" />
       <workItem from="1591542910986" duration="7069000" />
       <workItem from="1591563629137" duration="43000" />
+      <workItem from="1591646460969" duration="5239000" />
+      <workItem from="1591755946808" duration="23000" />
     </task>
     <servers />
   </component>
@@ -117,22 +116,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="767" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1591518783809" />
-    <state width="1237" height="429" key="GridCell.Tab.0.bottom" timestamp="1591550487344">
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom" timestamp="1591682942616">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="429" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
-    <state width="1237" height="429" key="GridCell.Tab.0.center" timestamp="1591550487344">
+    <state width="1237" height="2" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591682942616" />
+    <state width="1237" height="2" key="GridCell.Tab.0.center" timestamp="1591682942616">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="429" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
-    <state width="1237" height="429" key="GridCell.Tab.0.left" timestamp="1591550487344">
+    <state width="1237" height="2" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1591682942616" />
+    <state width="1237" height="2" key="GridCell.Tab.0.left" timestamp="1591682942616">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="429" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
-    <state width="1237" height="429" key="GridCell.Tab.0.right" timestamp="1591550487344">
+    <state width="1237" height="2" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1591682942616" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right" timestamp="1591682942616">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="429" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
+    <state width="1237" height="2" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1591682942616" />
     <state width="1237" height="429" key="GridCell.Tab.1.bottom" timestamp="1591550487344">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -157,21 +156,5 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1591489770529" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameScreen.java</url>
-          <line>82</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameScreen.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

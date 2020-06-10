@@ -1,7 +1,5 @@
 package cpsc2150.extendedTicTacToe;
 
-import org.omg.Messaging.SYNC_WITH_TRANSPORT;
-
 import java.util.Scanner;
 
 public class GameScreen {
@@ -26,12 +24,16 @@ public class GameScreen {
 
         GameBoard mainBoard = new GameBoard();
 
-
-        //Get Player X's first turn for the first game
+/***********************************************************************************
+ * Create the BoardPosition object and initialize it with a row and column of one
+ ***********************************************************************************/
         BoardPosition mainPos = new BoardPosition(1, 1);
 
         boolean playAgain = true;
 
+/***********************************************************************************
+ * Loop through the first game as long as playAgain is true
+ ************************************************************************************/
         //Loop for if checkSpace is true and the space is valid
         while (playAgain) {
             System.out.println(mainBoard);
@@ -45,7 +47,6 @@ public class GameScreen {
             mainBoard.placeMarker(mainPos, 'X');
 
             if (mainBoard.checkForWinner(mainPos)) {
-                System.out.println("Checking for Winner in main...\n");
                 System.out.println("Congratulations Player " + mainPos.getPlayer() + "! You won!\n");
 
                 //Ask if the user wants to play again
@@ -62,71 +63,37 @@ public class GameScreen {
                 }
             }
 
-                //PLAY AGAIN: New Game
-                while (playAgain) {
-                    //Create new blank GameBoard
-                    GameBoard nextBoard = new GameBoard();
+            //Player O's first turn
+            System.out.println(mainBoard);
+            System.out.println("\nPlayer O, Please enter your ROW:");
+            mainRow = scan.nextLine();
+            System.out.println("\nPlayer O, Please enter your COLUMN:");
+            mainColumn = scan.nextLine();
+            mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
+                    Integer.parseInt(String.valueOf(mainColumn)));
+            mainPos = move(scan, mainPos, 'O', mainBoard);
+            mainBoard.placeMarker(mainPos, 'O');
+            if (mainBoard.checkForWinner(mainPos)) {
+                System.out.println("Checking for Winner in main...\n");
+                System.out.println("Congratulations Player " + mainPos.getPlayer() + "! You won!\n");
 
-                    //Print the new GameBoard
-                    System.out.println(nextBoard);
-
-//                    //Get Player X's first turn of next game
-//                    System.out.println("\nPlayer X, Please enter your ROW:");
-//                    mainRow = scan.nextLine();
-//                    System.out.println("\nPlayer X, Please enter your COLUMN:");
-//                    mainColumn = scan.nextLine();
-//                    mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
-//                            Integer.parseInt(String.valueOf(mainColumn)));
-//                    mainPos = move(scan, mainPos, 'X', mainBoard);
-//                    mainBoard.placeMarker(mainPos, 'X');
-
-                    System.out.println(nextBoard);
-                    System.out.println("\nPlayer O, Please enter your ROW:");
-                    mainRow = scan.nextLine();
-                    System.out.println("\nPlayer O, Please enter your COLUMN:");
-                    mainColumn = scan.nextLine();
-                    mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
-                            Integer.parseInt(String.valueOf(mainColumn)));
-                    mainPos = move(scan, mainPos, 'O', mainBoard);
-                    mainBoard.placeMarker(mainPos, 'O');
-                    if (mainBoard.checkForWinner(mainPos)) {
-                        System.out.println("Checking for Winner in main...\n");
-                        System.out.println("Congratulations Player " + mainPos.getPlayer() + "! You won!\n");
-
-                        //Ask if the user wants to play again
-                        System.out.println("Would you like to play again? (Y for yes, or N or n for no)\n");
-                        String in = scan.nextLine();
-                        if (in.equals("N") || in.equals("n")) {
-                            playAgain = false;
-                        }
-                        else if (in.equals("y") || in.equals("Y")) {
-                            playAgain = true;
-                        }
-                        else {
-                            System.out.println("That is not a valid choice please try again (Y or y for Yes, or N or n for no)\n");
-                            System.out.println("Would you like to play again? (Y for yes, or N or n for no)\n");
-                            in = scan.nextLine();
-                        }
-                    }
+                //Ask if the user wants to play again
+                System.out.println("Would you like to play again? (Y for yes, or N or n for no)\n");
+                String in = scan.nextLine();
+                if (in.equals("N") || in.equals("n")) {
+                    playAgain = false;
                 }
-
-                System.out.println(mainBoard);
-                System.out.println("\nPlayer O, Please enter your ROW:");
-                mainRow = scan.nextLine();
-                System.out.println("\nPlayer O, Please enter your COLUMN:");
-                mainColumn = scan.nextLine();
-                mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
-                        Integer.parseInt(String.valueOf(mainColumn)));
-                mainPos = move(scan, mainPos, 'O', mainBoard);
-                mainBoard.placeMarker(mainPos, 'O');
-
-                //Check for a win or a draw after the first two turns
-                if (mainBoard.checkForWinner(mainPos)) {
-                    System.out.println("Checking for Winner in main...\n");
-                    System.out.println("Player " + mainPos.getPlayer() + " wins!\n");
+                else if (in.equals("y") || in.equals("Y")) {
+                    playAgain = true;
+                }
+                else {
+                    System.out.println("That is not a valid choice please try again (Y or y for Yes, or N or n for no)\n");
+                    System.out.println("Would you like to play again? (Y for yes, or N or n for no)\n");
+                    in = scan.nextLine();
                 }
             }
         }
+    }
 
 
         public static BoardPosition move (Scanner scan, BoardPosition playersMove,char player, GameBoard moveBoard){

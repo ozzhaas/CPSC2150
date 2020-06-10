@@ -7,9 +7,9 @@ import java.util.Objects;
 
 public class GameBoard extends AbsGameBoard implements IGameBoard {
 	private char[][] ticTacBoard;
-	private static final int MAX_LEN = 8;
-	private int count = 0;
-	private int numToWin = 5;
+	private int MAX_LEN;
+	private int count;
+	private int numToWin;
 
 
 	/**
@@ -18,8 +18,10 @@ public class GameBoard extends AbsGameBoard implements IGameBoard {
 	 */
 	public GameBoard() {
 		//Create the game board//
+		this.MAX_LEN = 8;
+		this.count = 0;
+		this.numToWin = 5;
 		ticTacBoard = new char [MAX_LEN][MAX_LEN];
-
 		//Initialize all positions on the board to blank space//
 		for (int i = 0; i < MAX_LEN; i++) {
 			for (int j = 0; j < MAX_LEN; j++) {
@@ -68,7 +70,6 @@ public class GameBoard extends AbsGameBoard implements IGameBoard {
 		diagonal = checkDiagonalWin(lastPos, lastPos.getPlayer());
 
 		if (horizontal || vertical || diagonal) {
-			System.out.println("Winner is true...\n");
 			return true;
 		}
 		return false;
@@ -107,49 +108,34 @@ public class GameBoard extends AbsGameBoard implements IGameBoard {
 		//checks to see if the last marker placed resulted in 5 in a row horizontally
 		//by checking if it matches the other 4 players in a sequence next to it
 		//Returns true if it does, otherwise false
-		System.out.println("Check for horizontal win is being called...");
-		int numOfHMatches = 0;
+		int numOfHMatches = 1;
 		int row = lastPos.getRow();
 		//Move the column left one space
 		int column = lastPos.getColumn() - 1;
 
 		//Loop through all of the columns holding the row (in which the marker was
 		//just placed) constant.
-		BoardPosition newPos = new BoardPosition(row, column);
 		while (column >= 0 && numOfHMatches < numToWin) {
-			System.out.println("Position to compare: " + row + ", " + column + "\n");
-			if (whatsAtPos(newPos) == whatsAtPos(lastPos)) {
-				System.out.println("Test if statement in HWin decrement...\n");
+			if (whatsAtPos(new BoardPosition(row, column)) == whatsAtPos(lastPos)) {
 				numOfHMatches++;
-				System.out.println("We've got " + numOfHMatches + " matches!\n");
-				if (numOfHMatches >= 5) {
-					return true;
-				}
 			}
 			else {
-				System.out.println("Exiting the loop...\n");
 				break;}
 			column--;
 		}
 
 		//Now move the column to the right one space
 		column = lastPos.getColumn() + 1;
-		newPos = new BoardPosition(row, column);
 		while (column < MAX_LEN && numOfHMatches < numToWin) {
-			System.out.println("Position to compare: " + row + ", " + column + "\n");
-			System.out.println("Player & lastPos: " + player + ", " + lastPos + "\n");
-			if (whatsAtPos(newPos) == whatsAtPos(lastPos)) {
-				System.out.println("Test if statement in HWin increment...\n");
+			if (whatsAtPos(new BoardPosition(row, column)) == whatsAtPos(lastPos)) {
 				numOfHMatches++;
-				System.out.println("We've got " + numOfHMatches + " matches!\n");
-				if (numOfHMatches >= 5) {
-					return true;
-				}
 			}
 			else {
-				System.out.println("Exiting the loop...\n");
 				break;}
 			column++;
+		}
+		if (numOfHMatches >= numToWin) {
+			return true;
 		}
 		return false;
 	}
@@ -186,9 +172,6 @@ public class GameBoard extends AbsGameBoard implements IGameBoard {
 				numOfVSpots++;
 			}
 			i--;
-		}
-		if (numOfVSpots == 5) {
-			System.out.println("Winner!\n");
 		}
 		return numOfVSpots == 5;
 	}
