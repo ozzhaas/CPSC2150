@@ -6,115 +6,101 @@
 
 package cpsc2150.mortgages;
 
-import java.util.Scanner;
+/**
+ * This interface specifies the functionality required by the view for our mortgage application program
+ * There are very few contracts as the view does not do any sort of input validation, it just
+ * interacts with the user.
+ *
+ * Defines: Controller: The IMortgageController associated with this view
+ */
+public interface IMortgageView {
 
-public class MortgageView implements IMortgageView {
-    Scanner scan;
-    IMortgageController c;
+    /**
+     *
+     * @param c the Controller object
+     * @pre c != NULL
+     * @post = Controller = c
+     */
+    void setController(IMortgageController c);
 
-    public MortgageView(){
-        scan = new Scanner(System.in);
-    }
+    /**
+     *
+     * @return the house cost provided by the user
+     */
+    double getHouseCost();
 
-    public void setController(IMortgageController c){
-        this.c = c;
-    }
+    /**
+     *
+     * @return the down payment provided by the user
+     */
+    double getDownPayment();
 
-    public double getHouseCost() {
-        System.out.println("How much does the house cost?\n");
-        String input = scan.nextLine();
-        double houseCost = Double.parseDouble(input);
-        return houseCost;
-    }
+    /**
+     *
+     * @return the years provided by the user
+     */
+    int getYears();
 
-    public double getDownPayment(){
-        System.out.println("How much is the down payment?\n");
-        String input = scan.nextLine();
-        double downPayment = Double.parseDouble(input);
-        return downPayment;
-    }
+    /**
+     *
+     * @return the monthly debt provided by the user
+     */
+    double getMonthlyDebt();
 
-    public int getYears() {
-        System.out.println("How many years?\n");
-        String input = scan.nextLine();
-        int yrs = Integer.parseInt(input);
-        return yrs;
-    }
+    /**
+     *
+     * @return the income provided by the user
+     */
+    double getYearlyIncome();
 
-    public double getMonthlyDebt() {
-        System.out.println("How much are your monthly debt payments?\n");
-        String input = scan.nextLine();
-        double monthlyDebt = Double.parseDouble(input);
-        return monthlyDebt;
-    }
+    /**
+     *
+     * @return the credit score provided by the user
+     */
+    int getCreditScore();
 
-    public double getYearlyIncome() {
-        System.out.println("How much is your yearly income?\n");
-        String input = scan.nextLine();
-        double yearlyIncome = Double.parseDouble(input);
-        return yearlyIncome;
-    }
+    /**
+     *
+     * @return the name provided by the user
+     */
+    String getName();
 
-    public int getCreditScore() {
-        System.out.println("What is your credit score?\n");
-        String input = scan.nextLine();
-        int creditScore = Integer.parseInt(input);
-        return creditScore;
-    }
+    /**
+     *
+     * @param s the message to provide to the user
+     */
+    void printToUser(String s);
 
-    public String getName() {
-        System.out.println("What's your name?\n");
-        String name = scan.nextLine();
-        return name;
-    }
+    /**
+     *
+     * @param p the monthly payment amount for the loan
+     * @requires p >= 0
+     */
+    void displayPayment(double p);
 
-    public void printToUser(String s) {
-        System.out.println(s);
-    }
+    /**
+     *
+     * @param r the (APR) interest rate for the loan
+     * @pre 0 <= r <= 1
+     */
+    void displayRate(double r);
 
-    public void displayPayment(double p) {
-        String str = "";
-        str += "Principal Amount: $" + p + "\n";
-        System.out.println(str);
-    }
+    /**
+     *
+     * @param a whether or not the mortgage application was approved
+     * @pre a iff [loan was approved]
+     */
+    void displayApproved(boolean a);
 
-    public void displayRate(double r) {
-        String str = "";
-        str += "Interest Rate: " + (r * 100) + "%\n";
-        System.out.println(str);
-    }
+    /**
+     *
+     * @return whether or not the user would like to apply for another mortgage with the same customer
+     */
+    boolean getAnotherMortgage();
 
-    public void displayApproved(boolean a) {
-
-        //I'm not sure how this is supposed to be able to call the customer/Mortgage information
-        if(!a){
-            System.out.println("Loan was not approved");
-        }
-
-    }
-
-    public boolean getAnotherMortgage() {
-        System.out.println("Would you like to apply for another mortgage? Y/N\n");
-        String input = scan.nextLine();
-        if (input.equals("Y") || input.equals("y")) {
-            return true;
-        }
-        else if (input.equals("N") || input.equals("n")) {
-            return false;
-        }
-        return false;
-    }
-
-    public boolean getAnotherCustomer() {
-        System.out.println("Would you like to consider another customer? Y/N\n");
-        String input = scan.nextLine();
-        if (input.equals("Y") || input.equals("y")) {
-            return true;
-        }
-        else if (input.equals("N") || input.equals("n")) {
-            return false;
-        }
-        return false;
-    }
-
+    /**
+     *
+     * @return whether or not the user would like to enter another customer
+     */
+    boolean getAnotherCustomer();
 }
