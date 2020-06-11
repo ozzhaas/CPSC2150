@@ -6,7 +6,7 @@ public abstract class MortgageView implements IMortgage {
     Scanner scan = new Scanner(System.in);
 
     public void setController(IMortgageController c) {
-
+        c = new IMortgageController();
     }
 
     public double getHouseCost() {
@@ -58,30 +58,42 @@ public abstract class MortgageView implements IMortgage {
     }
 
     public void printToUser(String s) {
-
-        displayPayment();
-        displayRate();
+        System.out.println(s);
     }
 
     public void displayPayment(double p) {
-
+        System.out.println(p);
     }
 
     public void displayRate(double r) {
-
+        System.out.println(r);
     }
 
     public void displayApproved(boolean a) {
-
+        System.out.println(a);
     }
 
     public boolean getAnotherMortgage() {
-
+        System.out.println("Would you like to apply for another mortgage? Y/N\n");
+        String input = scan.nextLine();
+        if (input.equals("Y") || input.equals("y")) {
+            return true;
+        }
+        else if (input.equals("N") || input.equals("n")) {
+            return false;
+        }
+        return false;
     }
 
     public boolean getAnotherCustomer() {
-
+        System.out.println("Would you like to consider another customer? Y/N\n");
+        String input = scan.nextLine();
+        if (input.equals("Y") || input.equals("y")) {
+            return true;
+        }
+        else if (input.equals("N") || input.equals("n")) {
+            return false;
+        }
+        return false;
     }
-
-
 }
