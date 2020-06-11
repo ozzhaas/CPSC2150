@@ -1,12 +1,23 @@
+/* Sterling Rich and Kellen Haas
+  CPSC 2150
+  lab9
+  6/10/20
+*/
+
 package cpsc2150.mortgages;
 
 import java.util.Scanner;
 
-public abstract class MortgageView implements IMortgage {
-    Scanner scan = new Scanner(System.in);
+public class MortgageView implements IMortgageView {
+    Scanner scan;
+    IMortgageController c;
 
-    public void setController(IMortgageController c) {
-        c = new IMortgageController();
+    public MortgageView(){
+        scan = new Scanner(System.in);
+    }
+
+    public void setController(IMortgageController c){
+        this.c = c;
     }
 
     public double getHouseCost() {
@@ -62,15 +73,24 @@ public abstract class MortgageView implements IMortgage {
     }
 
     public void displayPayment(double p) {
-        System.out.println(p);
+        String str = "";
+        str += "Principal Amount: $" + p + "\n";
+        System.out.println(str);
     }
 
     public void displayRate(double r) {
-        System.out.println(r);
+        String str = "";
+        str += "Interest Rate: " + (r * 100) + "%\n";
+        System.out.println(str);
     }
 
     public void displayApproved(boolean a) {
-        System.out.println(a);
+
+        //I'm not sure how this is supposed to be able to call the customer/Mortgage information
+        if(!a){
+            System.out.println("Loan was not approved");
+        }
+
     }
 
     public boolean getAnotherMortgage() {
@@ -96,4 +116,5 @@ public abstract class MortgageView implements IMortgage {
         }
         return false;
     }
+
 }

@@ -1,9 +1,8 @@
 /* Sterling Rich and Kellen Haas
   CPSC 2150
-  lab7
-  6/3/20
- */
-
+  lab9
+  6/10/20
+*/
 package cpsc2150.mortgages;
 
 /**

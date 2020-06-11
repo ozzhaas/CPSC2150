@@ -1,8 +1,8 @@
 /* Sterling Rich and Kellen Haas
   CPSC 2150
-  lab7
-  6/3/20
- */
+  lab9
+  6/10/20
+*/
 
 
 package cpsc2150.mortgages;
@@ -116,5 +116,24 @@ public class Mortgage implements IMortgage{
      */
     public int getYears() {
         return numberOfPayments/12;
+    }
+
+    /**
+     *
+     * @return the string representation of this loan details, or a notice that the loan was not approved
+     * @requires this != null and [interestRate and payment have been calculated]
+     * @ensures [toString = The string value of the loan, or "Loan was not approved"]
+     */
+    @Override
+    public String toString()
+    {
+        String str = "";
+
+        str += "Principal Amount: $" + getYears() + "\n";
+        str += "Interest Rate: " + (getRate() * 100) + "%\n";
+        str += "Term: " + getYears() + " years\n";
+        str += "Monthly Payment: $" + getPayment() + "\n";
+
+        return str;
     }
 }
