@@ -6,8 +6,6 @@ public abstract class AbsGameBoard implements IGameBoard {
     /**
      * @pre [The game board is empty at the start of the game] and [The game board has
      *      valid positions on it if the game has started or finished]
-     *      [Implementer must be sure to set the size of the rows in this function prior
-     *      to calling it]
      * @return [The String array of the Row and Column positions making the game board]
      *         [printed during the game]
      * @post [The string is formatted to return to GameScreen and print to the terminal]
@@ -15,8 +13,8 @@ public abstract class AbsGameBoard implements IGameBoard {
     @Override
     public String toString() {
         String gameBoardStr = " ";
-        int strRow = 7;
-        int strCol = 7;
+        int strRow = getNumRows();
+        int strCol = getNumColumns();
 
         //Label the column indexes
         for (int i = 0; i <= strCol; i++) {

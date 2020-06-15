@@ -41,9 +41,10 @@ public interface IGameBoard {
          * @post [The position pos is a valid choice]
          */
         default boolean checkSpace(BoardPosition pos) {
+            System.out.println("Calling checkSpace function...\n");
             //returns true if the position specified in pos is available,
             //false otherwise. If a space is not in bounds, then it is not available
-            if ((pos.getRow() >= 0) && (pos.getRow() < MAX_LEN) && (pos.getColumn() >= 0) && (pos.getColumn() < MAX_LEN)) {
+            if ((pos.getRow() >= 0) && (pos.getRow() < getNumRows()) && (pos.getColumn() >= 0) && (pos.getColumn() < getNumColumns())) {
                 return true;
             }
             else {

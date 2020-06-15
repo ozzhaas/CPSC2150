@@ -15,19 +15,6 @@ public class GameBoard extends AbsGameBoard implements IGameBoard {
 	 * @pre [the user wants to play Extended Tic Tac Toe]
 	 * @post [a game board is created and is empty and ready for the users to play]
 	 */
-	public GameBoard() {
-		//Create the game board//
-		this.MAX_LEN = 8;
-		this.count = 0;
-		this.numToWin = 5;
-		ticTacBoard = new char [MAX_LEN][MAX_LEN];
-		//Initialize all positions on the board to blank space//
-		for (int i = 0; i < MAX_LEN; i++) {
-			for (int j = 0; j < MAX_LEN; j++) {
-				ticTacBoard[i][j] = ' ';
-			}
-		}
-	}
 
 	public GameBoard(int numRows, int numCols, int win) {
 		//Create the game board//
