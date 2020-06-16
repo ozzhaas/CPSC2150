@@ -1,0 +1,5 @@
+I have not been able to figure out why my GameBoardMem is not working properly.
+The GameBoard implementation should be working fine, but because I have been
+stuck on the GameBoardMem implementation, I was not able to do my test cases.
+The makefile is also not setup to be able to compile and run the new implementation.
+I apologize in advance. 
