@@ -20,24 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8759c838-407b-474a-b39b-04c9810838b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../lab10/src/cpsc2150/mortgages/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab10/src/cpsc2150/mortgages/ICustomer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab10/src/cpsc2150/mortgages/IMortgage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab10/src/cpsc2150/mortgages/IMortgageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab10/src/cpsc2150/mortgages/IMortgageView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab10/src/cpsc2150/mortgages/Mortgage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab10/src/cpsc2150/mortgages/MortgageApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab10/src/cpsc2150/mortgages/MortgageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../lab10/src/cpsc2150/mortgages/MortgageView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project4/src/cpsc2150/extendedTicTacToe/AbsGameBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project4/src/cpsc2150/extendedTicTacToe/BoardPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project4/src/cpsc2150/extendedTicTacToe/GameBoard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project4/src/cpsc2150/extendedTicTacToe/GameBoardMem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project4/src/cpsc2150/extendedTicTacToe/GameScreen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Project4/src/cpsc2150/extendedTicTacToe/IGameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Homework3.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Homework3.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Project3.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/AbsGameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/AbsGameBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameBoard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameBoardMem.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameBoardMem.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameScreen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/GameScreen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/IGameBoard.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Project2/cpsc2150/extendedTicTacToe/IGameBoard.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/AbsGameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/AbsGameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameBoard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameBoardMem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameBoardMem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/GameScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/IGameBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/extendedTicTacToe/IGameBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Project4/HW4.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Project4/HW4.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Project4/exampleTestCases.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../Project4/exampleTestCases.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +76,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="cpsc2150.extendedTicTacToe.GameScreen" />
-      <module name="Project2" />
+      <module name="Project3" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,6 +111,10 @@
       <workItem from="1592155857718" duration="136000" />
       <workItem from="1592166096281" duration="1237000" />
       <workItem from="1592167657600" duration="5649000" />
+      <workItem from="1592186671375" duration="6578000" />
+      <workItem from="1592238193211" duration="1307000" />
+      <workItem from="1592261478511" duration="5819000" />
+      <workItem from="1592268177995" duration="4000" />
     </task>
     <servers />
   </component>
@@ -130,57 +134,65 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="408" y="0" key="#Auto_Import" timestamp="1592261597444">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="408" y="0" key="#Auto_Import/0.0.1280.680@0.0.1280.680" timestamp="1592261597444" />
     <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591291500559">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1591291500559" />
-    <state x="767" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1592181692672">
+    <state x="767" y="57" key="#com.intellij.ide.util.MemberChooser" timestamp="1592262236557">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="767" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1592181692672" />
-    <state width="1237" height="286" key="GridCell.Tab.0.bottom" timestamp="1592184085016">
+    <state x="767" y="57" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1592262236557" />
+    <state width="1237" height="52" key="GridCell.Tab.0.bottom" timestamp="1592267582806">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="286" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592184085016" />
-    <state width="1237" height="286" key="GridCell.Tab.0.center" timestamp="1592184085016">
+    <state width="1237" height="52" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592267582806" />
+    <state width="1237" height="52" key="GridCell.Tab.0.center" timestamp="1592267582806">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="286" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592184085016" />
-    <state width="1237" height="286" key="GridCell.Tab.0.left" timestamp="1592184085016">
+    <state width="1237" height="52" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1592267582806" />
+    <state width="1237" height="52" key="GridCell.Tab.0.left" timestamp="1592267582806">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="286" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592184085016" />
-    <state width="1237" height="286" key="GridCell.Tab.0.right" timestamp="1592184085016">
+    <state width="1237" height="52" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1592267582806" />
+    <state width="1237" height="52" key="GridCell.Tab.0.right" timestamp="1592267582806">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="286" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592184085016" />
-    <state width="1237" height="429" key="GridCell.Tab.1.bottom" timestamp="1591550487344">
+    <state width="1237" height="52" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1592267582806" />
+    <state width="1237" height="87" key="GridCell.Tab.1.bottom" timestamp="1592194418365">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="429" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
-    <state width="1237" height="429" key="GridCell.Tab.1.center" timestamp="1591550487344">
+    <state width="1237" height="87" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1592194418365" />
+    <state width="1237" height="87" key="GridCell.Tab.1.center" timestamp="1592194418365">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="429" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
-    <state width="1237" height="429" key="GridCell.Tab.1.left" timestamp="1591550487344">
+    <state width="1237" height="87" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1592194418365" />
+    <state width="1237" height="87" key="GridCell.Tab.1.left" timestamp="1592194418365">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="429" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
-    <state width="1237" height="429" key="GridCell.Tab.1.right" timestamp="1591550487344">
+    <state width="1237" height="87" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1592194418365" />
+    <state width="1237" height="87" key="GridCell.Tab.1.right" timestamp="1592194418365">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="429" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1591550487344" />
+    <state width="1237" height="87" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1592194418365" />
     <state x="274" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1591993071500">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="274" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1280.680@0.0.1280.680" timestamp="1591993071500" />
-    <state x="298" y="151" key="run.anything.popup" timestamp="1591544094572">
+    <state x="63" y="0" key="new project wizard" timestamp="1592267582246">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="298" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1591544094572" />
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1591489770529">
+    <state x="63" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1592267582246" />
+    <state x="298" y="151" key="run.anything.popup" timestamp="1592266194889">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1591489770529" />
+    <state x="298" y="151" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1592266194889" />
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1592262142702">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1592262142702" />
   </component>
 </project>

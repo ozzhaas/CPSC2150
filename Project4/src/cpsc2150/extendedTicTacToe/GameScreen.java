@@ -74,7 +74,7 @@ public class GameScreen {
         String winNumString = scan.nextLine();
         int winNum = Integer.parseInt(winNumString);
         if (rows > columns) {
-            while (winNum <= rows) {
+            while (winNum >= rows) {
                 System.out.println("The number in a row to win must be less than the number of rows.\n");
                 System.out.println("How many characters in a row to win the game?\n");
                 winNumString = scan.nextLine();
@@ -82,7 +82,7 @@ public class GameScreen {
             }
         }
         else if (columns > rows) {
-            while (winNum <= columns) {
+            while (winNum >= columns) {
                 System.out.println("The number in a row to win must be less than the number of columns.\n");
                 System.out.println("How many characters in a row to win the game?\n");
                 winNumString = scan.nextLine();
@@ -200,14 +200,14 @@ public class GameScreen {
                             winNumString = scan.nextLine();
                             winNum = Integer.parseInt(winNumString);
                             if (rows > columns) {
-                                while (winNum <= rows) {
+                                while (winNum >= rows) {
                                     System.out.println("The number in a row to win must be less than the number of rows.\n");
                                     System.out.println("How many characters in a row to win the game?\n");
                                     winNumString = scan.nextLine();
                                     winNum = Integer.parseInt(winNumString);
                                 }
                             } else if (columns > rows) {
-                                while (winNum <= columns) {
+                                while (winNum >= columns) {
                                     System.out.println("The number in a row to win must be less than the number of columns.\n");
                                     System.out.println("How many characters in a row to win the game?\n");
                                     winNumString = scan.nextLine();
@@ -252,7 +252,7 @@ public class GameScreen {
             }
         }
         else {
-            mainBoard = new GameBoard(rows, columns, winNum);
+            mainBoard = new GameBoardMem(rows, columns, winNum);
 
 
             /***********************************************************************************
@@ -394,36 +394,36 @@ public class GameScreen {
                 }
             }
         }
-}
+    }
 
 
-        public static BoardPosition move (Scanner scan, BoardPosition playersMove,char player, IGameBoard moveBoard){
-            while (!moveBoard.checkSpace(playersMove) || moveBoard.whatsAtPos(playersMove) != ' ') {
+    public static BoardPosition move (Scanner scan, BoardPosition playersMove,char player, IGameBoard moveBoard){
+        while (!moveBoard.checkSpace(playersMove) || moveBoard.whatsAtPos(playersMove) != ' ') {
+            System.out.println("That space is unavailable or out of bounds. Please pick again.\n");
+            System.out.println(moveBoard);
+            System.out.println("\nPlayer " + player + " , Please enter your ROW:");
+            String row = scan.nextLine();
+            System.out.println("\nPlayer " + player + " , Please enter your ROW:");
+            String column = scan.nextLine();
+            BoardPosition pos = new BoardPosition(Integer.parseInt(String.valueOf(row)),
+                    Integer.parseInt(String.valueOf(column)));
+            if (!moveBoard.checkSpace(pos)) {
                 System.out.println("That space is unavailable or out of bounds. Please pick again.\n");
                 System.out.println(moveBoard);
                 System.out.println("\nPlayer " + player + " , Please enter your ROW:");
-                String row = scan.nextLine();
+                row = scan.nextLine();
                 System.out.println("\nPlayer " + player + " , Please enter your ROW:");
-                String column = scan.nextLine();
-                BoardPosition pos = new BoardPosition(Integer.parseInt(String.valueOf(row)),
+                column = scan.nextLine();
+                pos = new BoardPosition(Integer.parseInt(String.valueOf(row)),
                         Integer.parseInt(String.valueOf(column)));
-                if (!moveBoard.checkSpace(pos)) {
-                    System.out.println("That space is unavailable or out of bounds. Please pick again.\n");
-                    System.out.println(moveBoard);
-                    System.out.println("\nPlayer " + player + " , Please enter your ROW:");
-                    row = scan.nextLine();
-                    System.out.println("\nPlayer " + player + " , Please enter your ROW:");
-                    column = scan.nextLine();
-                    pos = new BoardPosition(Integer.parseInt(String.valueOf(row)),
-                            Integer.parseInt(String.valueOf(column)));
-                }
-                else {
-                    return pos;
-                }
             }
-            return playersMove;
+            else {
+                return pos;
+            }
         }
+        return playersMove;
     }
+}
 
 
 

@@ -1,7 +1,7 @@
 package cpsc2150.extendedTicTacToe;
 
 
-public abstract class AbsGameBoard implements IGameBoard {
+public abstract class AbsGameBoard implements cpsc2150.extendedTicTacToe.IGameBoard {
 
     /**
      * @pre [The game board is empty at the start of the game] and [The game board has
@@ -41,7 +41,7 @@ public abstract class AbsGameBoard implements IGameBoard {
             }
             for (int c = 0; c < strCol; c++) {
                 BoardPosition stringPos;
-                    stringPos = new BoardPosition(i, c);
+                stringPos = new BoardPosition(i, c);
                 if (c >= 10) {
                     gameBoardStr = gameBoardStr + " " + whatsAtPos(stringPos) + "  " + '|';
                 }

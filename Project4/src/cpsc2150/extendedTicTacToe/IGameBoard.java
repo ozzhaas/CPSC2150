@@ -4,24 +4,12 @@ import java.util.Objects;
 
 /**
  *************************EXAMPLE*****************************
- * This object will hold the information about a mortgage, and will handle all calculations for interest rate and monthly payments
- * @Defines: Payment: R - The monthly payment on the mortgage
- *          Rate: R - the interest rate per monthly period on the loan
- *          Customer: - Every loan must have an associated customer
- *          DebtToIncomeRatio: R - The ratio of the Customer's total monthly debt payments (including mortgage) to their monthly income
- *          Principal: R - The amount of the loan
- *          NumberOfPayments: Z - total number of payments the customer will make on the loan
- *          PercentDown : R - The percent of the house cost covered by the down payment
+ * This object will hold the information necessary to create the game board and access the game board during a game
+ * @Defines:
  *
- * @Initialization Ensures: [Rate is calculated based on the BASERATE, the years for the loan, and the PercentDown]
- *                          [Payment is calculated]
+ * @Initialization Ensures:
  *
- * @Constraints: Payment = (Rate * Principal) / (1-(1+Rate)^ -NumberOfPayments)
- *               0 <= Rate <= 1
- *               0 < DebtToIncomeRatio
- *               MIN_YEARS * 12 <= NumberOfPayments <= MAX_YEARS * 12
- *               0 < Principal
- *               0 <= PercentDown < 1
+ * @Constraints:
  *
  *
  *
@@ -29,84 +17,83 @@ import java.util.Objects;
 
 public interface IGameBoard {
 
-        public static final int MAX_LEN = 100;
-        public static final int count = 0;
+    public static final int MAX_LEN = 100;
+    public static final int count = 0;
 
 
-        /**
-         * @param pos [the position the user chose] and [must have both a Row and a Column value]
-         * @pre [The user chose a position that is an integer between 0 and 7]
-         * @return (True [if pos is empty and in the bounds of the board]) and
-         *         (False [if pos is out of bounds or already taken])
-         * @post [The position pos is a valid choice]
-         */
-        default boolean checkSpace(BoardPosition pos) {
-            System.out.println("Calling checkSpace function...\n");
-            //returns true if the position specified in pos is available,
-            //false otherwise. If a space is not in bounds, then it is not available
-            if ((pos.getRow() >= 0) && (pos.getRow() < getNumRows()) && (pos.getColumn() >= 0) && (pos.getColumn() < getNumColumns())) {
-                return true;
-            }
-            else {
-                return false;
-            }
+    /**
+     * @param pos [the position the user chose] and [must have both a Row and a Column value]
+     * @pre [The user chose a position that is an integer between 0 and 7]
+     * @return (True [if pos is empty and in the bounds of the board]) and
+     *         (False [if pos is out of bounds or already taken])
+     * @post [The position pos is a valid choice]
+     */
+    default boolean checkSpace(BoardPosition pos) {
+        //returns true if the position specified in pos is available,
+        //false otherwise. If a space is not in bounds, then it is not available
+        if ((pos.getRow() >= 0) && (pos.getRow() < getNumRows()) && (pos.getColumn() >= 0) && (pos.getColumn() < getNumColumns())) {
+            return true;
         }
-
-        /**
-         * @param marker = [position to place the character player on the game board]
-         * @pre [The position passed in as marker must be valid and if it is not, then this
-         *      function shouldn't be called]
-         * @return void
-         * @post [Makes sure to place a marker in a position that is not already taken or is invalid]
-         */
-        public void placeMarker(BoardPosition marker, char player);
-
-
-        /**
-         * @param lastPos = [the last position placed on the game board]
-         * @pre [The position passed in must be valid and in bounds before it can
-         *      be checked for a potential winner]
-         * @return (True [if lastPos won the game]) or (False [if lastPos didn't win the game])
-         * @post [Will determine if there is a winner from only the specific position. Since
-         *       it will be called every time a game piece is placed, you can assume it would've
-         *       caught a previous win if there was one.]
-         */
-
-        public default boolean checkForWinner(BoardPosition lastPos) {
-            //this function will check to see if the lastPos placed resulted in
-            //a winner. If so it will return true, otherwise false.
-            boolean horizontal = false;
-            boolean vertical = false;
-            boolean diagonal = false;
-
-            horizontal = checkHorizontalWin(lastPos);
-            vertical = checkVerticalWin(lastPos);
-            diagonal = checkDiagonalWin(lastPos);
-
-            if (horizontal || vertical || diagonal) {
-                return true;
-            }
+        else {
             return false;
         }
+    }
+
+    /**
+     * @param marker = [position to place the character player on the game board]
+     * @pre [The position passed in as marker must be valid and if it is not, then this
+     *      function shouldn't be called]
+     * @return void
+     * @post [Makes sure to place a marker in a position that is not already taken or is invalid]
+     */
+    public void placeMarker(BoardPosition marker, char player);
 
 
-        /**
-         * @param lastPos
-         * @pre [Assumes that all positions are placed in a valid fashion]
-         * @return (True [if the game is a tie]) or (False [if the game is not a tie]
-         * @post [If true, there is a tie]
-         */
-        default boolean checkForDraw(BoardPosition lastPos) {
-            //this function will check to see if the game has resulted in a tie.
-            //A game is tied if there are no free board positions remaining.
-            //It will return true if the game is tied, and false otherwise.
-            if (count == getNumColumns() * getNumRows() && !checkForWinner(lastPos)) {
-                return true;
-            }
-            else {
-                return false;
-            }
+    /**
+     * @param lastPos = [the last position placed on the game board]
+     * @pre [The position passed in must be valid and in bounds before it can
+     *      be checked for a potential winner]
+     * @return (True [if lastPos won the game]) or (False [if lastPos didn't win the game])
+     * @post [Will determine if there is a winner from only the specific position. Since
+     *       it will be called every time a game piece is placed, you can assume it would've
+     *       caught a previous win if there was one.]
+     */
+
+    public default boolean checkForWinner(BoardPosition lastPos) {
+        //this function will check to see if the lastPos placed resulted in
+        //a winner. If so it will return true, otherwise false.
+        boolean horizontal = false;
+        boolean vertical = false;
+        boolean diagonal = false;
+
+        horizontal = checkHorizontalWin(lastPos);
+        vertical = checkVerticalWin(lastPos);
+        diagonal = checkDiagonalWin(lastPos);
+
+        if (horizontal || vertical || diagonal) {
+            return true;
         }
+        return false;
+    }
+
+
+    /**
+     * @param lastPos
+     * @pre [Assumes that all positions are placed in a valid fashion]
+     * @return (True [if the game is a tie]) or (False [if the game is not a tie]
+     * @post [If true, there is a tie]
+     */
+    default boolean checkForDraw(BoardPosition lastPos) {
+        //this function will check to see if the game has resulted in a tie.
+        //A game is tied if there are no free board positions remaining.
+        //It will return true if the game is tied, and false otherwise.
+        if (count == getNumColumns() * getNumRows() && !checkForWinner(lastPos)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 
 
 
@@ -301,7 +288,6 @@ public interface IGameBoard {
 
     default boolean isPlayerAtPos(BoardPosition pos, char player) {
         if (whatsAtPos(pos) == player) {
-            System.out.println("Matching players! Player 1: " + whatsAtPos(pos) + ", Player 2: " + player);
             return true;
         }
         else {
