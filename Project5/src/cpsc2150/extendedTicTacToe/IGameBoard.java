@@ -5,7 +5,8 @@ import java.util.Objects;
 /**
  *************************EXAMPLE*****************************
  * This object will hold the information necessary to create the game board and access the game board during a game
- * @Defines:
+ * @Defines: This interface is used to create a GameBoard or GameBoardMem object and they will store
+ * all of our player's characters as they place them on the board in a game.
  *
  * @Initialization Ensures:
  *
@@ -16,7 +17,7 @@ import java.util.Objects;
  */
 
 public interface IGameBoard {
-
+    public static final int MIN_LEN = 3;
     public static final int MAX_LEN = 100;
     public static final int count = 0;
 
@@ -36,9 +37,8 @@ public interface IGameBoard {
                 return true;
             }
         }
-        return false;
+            return false;
     }
-
 
     /**
      * @param marker = [position to place the character player on the game board]
@@ -122,7 +122,8 @@ public interface IGameBoard {
                 numOfHMatches++;
             }
             else {
-                break;}
+                break;
+            }
             column--;
         }
 
@@ -133,7 +134,8 @@ public interface IGameBoard {
                 numOfHMatches++;
             }
             else {
-                break;}
+                break;
+            }
             column++;
         }
         if (numOfHMatches >= getNumToWin()) {
@@ -208,7 +210,7 @@ public interface IGameBoard {
 
         //First scan from lastPos to the top left
         while (countInARow < getNumToWin() && row >= 0 && col >= 0) {
-            if (isPlayerAtPos(new BoardPosition(row, col), whatsAtPos(lastPos))) {
+            if (whatsAtPos(new BoardPosition(row, col)) == whatsAtPos(lastPos)) {
                 countInARow++;
             }
             else {
@@ -228,7 +230,7 @@ public interface IGameBoard {
             if (countInARow >= getNumToWin()) {
                 break;
             }
-            else if (isPlayerAtPos(new BoardPosition(row, col), whatsAtPos(lastPos))) {
+            else if (whatsAtPos(new BoardPosition(row, col)) == whatsAtPos(lastPos)) {
                 secondCountInARow++;
             }
             else {
@@ -248,7 +250,7 @@ public interface IGameBoard {
             if (secondCountInARow >= getNumToWin()) {
                 break;
             }
-            else if (isPlayerAtPos(new BoardPosition(row, col), whatsAtPos(lastPos))) {
+            else if (whatsAtPos(new BoardPosition(row, col)) == whatsAtPos(lastPos)) {
                 countInARow++;
             }
             else {
@@ -267,7 +269,7 @@ public interface IGameBoard {
             if (countInARow >= getNumToWin()) {
                 break;
             }
-            if (isPlayerAtPos(new BoardPosition(row, col), whatsAtPos(lastPos))) {
+            else if (whatsAtPos(new BoardPosition(row, col)) == whatsAtPos(lastPos)) {
                 secondCountInARow++;
             }
             else {
@@ -279,7 +281,7 @@ public interface IGameBoard {
             col--;
         }
 
-        return (countInARow == getNumToWin() || secondCountInARow == getNumToWin());
+        return (countInARow >= getNumToWin() || secondCountInARow >= getNumToWin());
     }
 
 

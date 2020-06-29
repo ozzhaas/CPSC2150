@@ -48,35 +48,12 @@ public class GameBoardMem extends AbsGameBoard implements IGameBoard {
     }
 
 
-    /**
-     * @param lastPos
-     * @pre [Assumes that all positions are placed in a valid fashion]
-     * @return (True [if the game is a tie] or False [if the game is not a tie])
-     * @post [If true, there is a tie]
-     */
-
-    @Override
-    public boolean checkForDraw(BoardPosition lastPos) {
-        //this function will check to see if the game has resulted in a tie.
-        //A game is tied if there are no free board positions remaining.
-        //It will return true if the game is tied, and false otherwise.
-        if (count == MAX_LEN) {
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
 
     @Override
     public boolean isPlayerAtPos(BoardPosition pos, char player) {
-        if (ticTacMap.get(player).contains(pos)) {
-            return true;
-        }
-        else {
-            return false;
-        }
+        return pos.getPlayer() == player;
     }
+
 
     public char whatsAtPos(BoardPosition pos) {
         for (Map.Entry <Character, List<BoardPosition>> m : ticTacMap.entrySet()) {

@@ -229,24 +229,15 @@ public class GameScreen {
                                     gameType = gameType.toUpperCase();
                                 }
                             }
-
-                            for (int k = 0; k < numOfPlayers; k++) {
-                                mainBoard = new GameBoard(mainBoard.getNumRows(), mainBoard.getNumColumns(), mainBoard.getNumToWin());
-                                System.out.println(mainBoard);
-                                System.out.println("\nPlayer " + playerArray.get(k) + ", please enter your ROW:");
-                                mainRow = scan.nextLine();
-                                System.out.println("\nPlayer " + playerArray.get(k) + ", please enter your COLUMN:");
-                                mainColumn = scan.nextLine();
-                                mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
-                                        Integer.parseInt(String.valueOf(mainColumn)));
-                                mainPos = move(scan, mainPos, playerArray.get(i), mainBoard);
-                                mainBoard.placeMarker(mainPos, playerArray.get(i));
-                            }
+                            mainBoard = new GameBoard(rows, columns, winNum);
                         } else {
                             System.out.println("That is not a valid choice please try again (Y or y for Yes, or N or n for no)\n");
                             System.out.println("Would you like to play again? (Y for yes, or N or n for no)\n");
                             in = scan.nextLine();
                         }
+                    }
+                    else {
+                        mainBoard.checkForDraw(mainPos);
                     }
                 }
             }
@@ -292,7 +283,7 @@ public class GameScreen {
                         }
 
 
-                        //          There was a winner and now the user has chosen to play another game             //
+                        //There was a winner and now the user has chosen to play another game             //
                         else if (in.equals("y") || in.equals("Y")) {
                             playAgain = true;
                             playerArray.clear();
@@ -371,19 +362,7 @@ public class GameScreen {
                                     gameType = gameType.toUpperCase();
                                 }
                             }
-
-                            for (int k = 0; k < numOfPlayers; k++) {
-                                mainBoard = new GameBoard(mainBoard.getNumRows(), mainBoard.getNumColumns(), mainBoard.getNumToWin());
-                                System.out.println(mainBoard);
-                                System.out.println("\nPlayer " + playerArray.get(k) + ", please enter your ROW:");
-                                mainRow = scan.nextLine();
-                                System.out.println("\nPlayer " + playerArray.get(k) + ", please enter your COLUMN:");
-                                mainColumn = scan.nextLine();
-                                mainPos = new BoardPosition(Integer.parseInt(String.valueOf(mainRow)),
-                                        Integer.parseInt(String.valueOf(mainColumn)));
-                                mainPos = move(scan, mainPos, playerArray.get(i), mainBoard);
-                                mainBoard.placeMarker(mainPos, playerArray.get(i));
-                            }
+                            mainBoard = new GameBoard(rows, columns, winNum);
                         }
                         else {
                             System.out.println("That is not a valid choice please try again (Y or y for Yes, or N or n for no)\n");
