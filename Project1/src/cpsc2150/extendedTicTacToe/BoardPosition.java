@@ -9,7 +9,7 @@ public class BoardPosition {
      * BoardPosition Constructor
      * @param r = the row of the position on the game board
      * @param c = the column of the position on the game board
-     * @param playerLetter = the character for each player [i.e. X or O]
+    //     * @param playerLetter = the character for each player [i.e. X or O]
      * @return [returns a BoardPosition Object]
      * @pre (0 <= r <= 7) and (0 <= c <= 7)
      * @pre (playerLetter == 'X') or (playerLetter == 'O')
@@ -17,10 +17,9 @@ public class BoardPosition {
      *       then used BoardPosition as a parameter for its methods
      *       to mark the various valid positions on the board.
      */
-    public BoardPosition(int r, int c, char playerLetter) {
+    public BoardPosition(int r, int c) {
         Row = r;
         Column = c;
-        Player = playerLetter;
     }
 
     /**

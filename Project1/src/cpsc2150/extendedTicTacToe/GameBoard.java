@@ -1,5 +1,10 @@
 package cpsc2150.extendedTicTacToe;
 
+/**
+ * @invariants
+ */
+
+
 public class GameBoard {
     /**
      * @pre [the user wants to play Extended Tic Tac Toe]
@@ -12,7 +17,7 @@ public class GameBoard {
 
     /**
      * @param pos [the position the user chose] and [must have both a Row and a Column value]
-     * @pre [The user chose a position that is an integer between 0 and 7]
+     * @pre 0 <= pos <= 7 [The user chose a position that is an integer between 0 and 7]
      * @return (True [if pos is empty and in the bounds of the board]) and
      *         (False [if pos is out of bounds or already taken])
      * @post [The position pos is a valid choice]
