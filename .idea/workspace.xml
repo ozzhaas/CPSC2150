@@ -42,8 +42,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab8IntelliJ" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -64,24 +69,23 @@
       <workItem from="1591221583514" duration="12000" />
       <workItem from="1591564625722" duration="19000" />
       <workItem from="1592269343683" duration="22000" />
+      <workItem from="1600457722845" duration="170000" />
+      <workItem from="1600457905859" duration="22000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="659" y="0" width="616" height="680" key="#HelloWorldApp" timestamp="1589419288081">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="659" y="0" width="616" height="680" key="#HelloWorldApp/0.0.1280.680@0.0.1280.680" timestamp="1589419288081" />
-    <state x="421" y="82" key="FileChooserDialogImpl" timestamp="1592269364992">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="505" y="99" key="FileChooserDialogImpl" timestamp="1600457890083">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="421" y="82" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1592269364992" />
-    <state x="127" y="0" key="new project wizard" timestamp="1590357122648">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="505" y="99" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600457890083" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1600457891896">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="127" y="0" key="new project wizard/0.0.1280.680@0.0.1280.680" timestamp="1590357122648" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600457891896" />
   </component>
 </project>

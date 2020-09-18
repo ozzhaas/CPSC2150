@@ -1,7 +1,7 @@
-/* Sterling Rich and Kellen Haas
-  CPSC 2150
-  Lab4
-  5/24/20
+/* Kellen Haas
+   CPSC 2150
+   Lab4
+   9/18/20
  */
 
 package cpsc2150.MyQueue;
@@ -35,8 +35,9 @@ public class ArrayQueue implements IQueue {
      * @param x The Integer being pushed into the end of the Queue
      */
     public void add(Integer x){
-        depth++;
         myQ[depth] = x;
+        depth++;
+
     }
 
     /**
@@ -46,6 +47,10 @@ public class ArrayQueue implements IQueue {
      */
     public Integer pop() {
         Integer x = myQ[0];
+
+        for(int i = 0; i < depth;i++){
+            myQ[i] = myQ[i+1];
+        }
 
         depth--;
         return x;

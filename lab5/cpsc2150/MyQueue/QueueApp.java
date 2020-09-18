@@ -31,7 +31,7 @@ public class QueueApp {
         //menu
         String menuSelec = "10";
         while(!menuSelec.equals("8")){
-            System.out.println("Select and option:\n");
+            System.out.println("Select an option:\n");
             System.out.println("\t1. Add to the Queue\n\t2. Get next number from the Queue\n\t" +
                     "3. Peek at the front of the Queue\n\t4. Peek at the end of the Queue\n\t5. Insert in the Queue\n\t" +
                     "6. Get a position in the Queue\n\t7. Remove from a position in the Queue\n\t8. Quit\n");
