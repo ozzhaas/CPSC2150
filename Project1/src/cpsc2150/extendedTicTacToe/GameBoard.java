@@ -1,11 +1,25 @@
+/*
+  Kellen Haas
+  CPSC 2150
+  Project 1
+  9/20/20
+ */
+
+
+
 package cpsc2150.extendedTicTacToe;
 
 /**
- * @invariants
+ * @invariant [All empty positions must be filled with blank space when the board is created
+ * in the constructor]
+ * @invariant [Originally, the markers must use either X or O to be valid]
+ * @invariant lastPos = [expected to be valid] and pos = [position to check for validity]
  */
 
 
 public class GameBoard {
+
+
     /**
      * @pre [the user wants to play Extended Tic Tac Toe]
      * @return [fully created, functional game board]
@@ -15,6 +29,8 @@ public class GameBoard {
 
     }
 
+
+
     /**
      * @param pos [the position the user chose] and [must have both a Row and a Column value]
      * @pre 0 <= pos <= 7 [The user chose a position that is an integer between 0 and 7]
@@ -23,11 +39,13 @@ public class GameBoard {
      * @post [The position pos is a valid choice]
      */
     public boolean checkSpace(BoardPosition pos) {
-        //returns true if the position specified in pos is available,
-        //false otherwise. If a space is not in bounds, then it is not available
+        // Returns true if the position specified in pos is available,
+        // false otherwise. If a space is not in bounds, then it is not available
 
         return false;
     }
+
+
 
     /**
      * @param marker = [position to place the character player on the game board]
@@ -38,8 +56,12 @@ public class GameBoard {
      */
     public void placeMarker(BoardPosition marker, char player)
     {
-//places the character in marker on the position specified by marker, and should not be called if the space is not available.
+        // Places the character in marker on the position specified by marker,
+        // and should not be called if the space is not available.
     }
+
+
+
 
     /**
      * @param lastPos = [the last position placed on the game board]
@@ -51,15 +73,17 @@ public class GameBoard {
      *       caught a previous win if there was one.]
      */
     public boolean checkForWinner(BoardPosition lastPos) {
-        //this function will check to see if the lastPos placed resulted in
-        //a winner. It so it will return true, otherwise false.
-        //Passing in the last position will help limit the possible places
-        //to check for a win condition, since you can assume that any win
-        //condition that did not include the most recent play made would have
-        //been caught earlier.
-        //You may call other methods to complete this method
+        // This function will check to see if the lastPos placed resulted in
+        // a winner. It so it will return true, otherwise false.
+        // Passing in the last position will help limit the possible places
+        // to check for a win condition, since you can assume that any win
+        // condition that did not include the most recent play made would have
+        // been caught earlier.
+        // You may call other methods to complete this method
         return false;
     }
+
+
 
 
     /**
@@ -69,10 +93,14 @@ public class GameBoard {
      */
     public boolean checkForDraw()
     {
-        //this function will check to see if the game has resulted in a tie. A game is tied if there are no free board positions remaining. You do not need to check for any potential wins, because we can assume that the players were checking for win conditions as they played the game.
-        //It will return true if the game is tied, and false otherwise.
+        // This function will check to see if the game has resulted in a tie.
+        // A game is tied if there are no free board positions remaining.
+        // You do not need to check for any potential wins, because we can assume that
+        // the players were checking for win conditions as they played the game.
+        // It will return true if the game is tied, and false otherwise.
         return false;
     }
+
 
 
     /**
@@ -83,11 +111,12 @@ public class GameBoard {
      * @post [The specified Row of the board is checked for a win]
      */
     public boolean checkHorizontalWin(BoardPosition lastPos, char player) {
-        //checks to see if the last marker placed resulted in 5 in a row horizontally
-        //by checking if it matches the other 4 players in a sequence next to it
-        //Returns true if it does, otherwise false
+        // Checks to see if the last marker placed resulted in 5 in a row horizontally
+        // by checking if it matches the other 4 players in a sequence next to it
+        // Returns true if it does, otherwise false
         return false;
     }
+
 
 
     /**
@@ -99,10 +128,11 @@ public class GameBoard {
      */
     public boolean checkVerticalWin(BoardPosition lastPos, char player)
     {
-        //checks to see if the last marker placed resulted in 5 in a row vertically.
-        //Returns true if it does, otherwise false
+        // Checks to see if the last marker placed resulted in 5 in a row vertically.
+        // Returns true if it does, otherwise false
         return false;
     }
+
 
 
     /**
@@ -113,8 +143,32 @@ public class GameBoard {
      * @post [The specified diagonal of the board is checked for a win]
      */
     public boolean checkDiagonalWin(BoardPosition lastPos, char player) {
-        //checks to see if the last marker placed resulted in 5 in a row diagonally.
+        // Checks to see if the last marker placed resulted in 5 in a row diagonally.
         // Returns true if it does, otherwise false
+        return false;
+    }
+
+
+    /**
+     * @param pos = [position in the GameBoard]
+     * @return [the char at the specified board position or a blank space
+     * if there is no marker at that position]
+     */
+
+    public char whatsAtPos(BoardPosition pos) {
+        // Returns what is in the GameBoard at position pos
+        // If no marker is there it returns a blank space char ' '
+        return ' ';
+    }
+
+    /**
+     *
+     * @param pos = [position in the GameBoard]
+     * @param player [the character that identifies the player (either "X" or "O")]
+     * @return [true if the character in that position matches player and false otherwise]
+     */
+    public boolean isPlayerAtPos (BoardPosition pos, char player) {
+        // Returns true if the player is at pos, otherwise returns false
         return false;
     }
 
@@ -124,18 +178,12 @@ public class GameBoard {
      *      valid positions on it if the game has started or finished]
      * @return [The String array of the Row and Column positions making the game board]
      *         [printed during the game]
-     * @post [The specified diagonal of the board is checked for a win]
+     * @post [Formats a full game board string to print out in GameScreen]
      */
     @Override
     public String toString() {
-
-        return "string";
+        return "eventually this will be a formatted game board.";
     }
-
-
-
-
-
 
 
 }
