@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbab2aa6-c8e7-4e5b-b095-ac17b50c5cd8" name="Default Changelist" comment="">
+    <list default="true" id="dbab2aa6-c8e7-4e5b-b095-ac17b50c5cd8" name="Default Changelist" comment="9.18 4:52pm">
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/Kellen_Haas.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
@@ -65,17 +65,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -91,7 +80,8 @@
       <workItem from="1590459362161" duration="5000" />
       <workItem from="1590459377667" duration="715000" />
       <workItem from="1590460143453" duration="68000" />
-      <workItem from="1600457936800" duration="4366000" />
+      <workItem from="1600457936800" duration="4470000" />
+      <workItem from="1600571438838" duration="110000" />
     </task>
     <servers />
   </component>
@@ -110,39 +100,47 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="9.18 4:52pm" />
+    <option name="LAST_COMMIT_MESSAGE" value="9.18 4:52pm" />
+  </component>
   <component name="WindowStateProjectService">
-    <state width="1342" height="242" key="GridCell.Tab.0.bottom" timestamp="1600462333430">
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1600571443595">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="242" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600462333430" />
-    <state width="1342" height="242" key="GridCell.Tab.0.center" timestamp="1600462333430">
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600571443595" />
+    <state width="1342" height="186" key="GridCell.Tab.0.bottom" timestamp="1600571549345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="242" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600462333430" />
-    <state width="1342" height="242" key="GridCell.Tab.0.left" timestamp="1600462333430">
+    <state width="1342" height="186" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600571549345" />
+    <state width="1342" height="186" key="GridCell.Tab.0.center" timestamp="1600571549344">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="242" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600462333430" />
-    <state width="1342" height="242" key="GridCell.Tab.0.right" timestamp="1600462333430">
+    <state width="1342" height="186" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600571549344" />
+    <state width="1342" height="186" key="GridCell.Tab.0.left" timestamp="1600571549344">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="242" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600462333430" />
-    <state width="1342" height="242" key="GridCell.Tab.1.bottom" timestamp="1600462333430">
+    <state width="1342" height="186" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600571549344" />
+    <state width="1342" height="186" key="GridCell.Tab.0.right" timestamp="1600571549345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="242" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600462333430" />
-    <state width="1342" height="242" key="GridCell.Tab.1.center" timestamp="1600462333430">
+    <state width="1342" height="186" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600571549345" />
+    <state width="1342" height="242" key="GridCell.Tab.1.bottom" timestamp="1600462443649">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="242" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600462333430" />
-    <state width="1342" height="242" key="GridCell.Tab.1.left" timestamp="1600462333430">
+    <state width="1342" height="242" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600462443649" />
+    <state width="1342" height="242" key="GridCell.Tab.1.center" timestamp="1600462443649">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="242" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600462333430" />
-    <state width="1342" height="242" key="GridCell.Tab.1.right" timestamp="1600462333430">
+    <state width="1342" height="242" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600462443649" />
+    <state width="1342" height="242" key="GridCell.Tab.1.left" timestamp="1600462443649">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1342" height="242" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600462333430" />
+    <state width="1342" height="242" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600462443649" />
+    <state width="1342" height="242" key="GridCell.Tab.1.right" timestamp="1600462443649">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1342" height="242" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600462443649" />
     <state x="540" y="0" width="1326" height="779" key="dock-window-1" timestamp="1600459446553">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
