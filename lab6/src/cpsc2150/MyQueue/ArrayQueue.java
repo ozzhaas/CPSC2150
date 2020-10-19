@@ -1,4 +1,4 @@
-/* Sterling Rich and Kellen Haas
+/*Kellen Haas
   CPSC 2150
   Lab6
   5/31/20
@@ -6,7 +6,7 @@
 
 package cpsc2150.MyQueue;
 
-public class ArrayQueue<T> extends AbsQueue<T> {
+public class ArrayQueue<T> extends AbsQueue<T> implements IQueue<T>{
 
     /**
      * @invariants 0 <= depth <= MAX_DEPTH and
@@ -25,8 +25,7 @@ public class ArrayQueue<T> extends AbsQueue<T> {
      * @post myQ size = MAX_DEPTH and depth = 0
      */
     public ArrayQueue() {
-		@SuppressWarnings("unchecked")
-		T [] myQ = (T[]) new Object [MAX_DEPTH];
+        myQ = (T[]) new Object [IQueue.MAX_DEPTH];
         depth = 0;
     }
 
@@ -35,8 +34,7 @@ public class ArrayQueue<T> extends AbsQueue<T> {
      * @post depth = #depth + 1 and x = myQ[depth]
      * @param x The T being pushed into the end of the Queue
      */
-    public void add(T x){
-
+    public void enqueue(T x){
         myQ[depth] = x;
         depth++;
     }
@@ -46,7 +44,7 @@ public class ArrayQueue<T> extends AbsQueue<T> {
      * @post depth = #depth - 1
      * @return Returns the first T in the Queue
      */
-    public T pop() {
+    public T dequeue() {
         T x = myQ[0];
 
         for(int i = 0; i < depth;i++){
@@ -61,7 +59,7 @@ public class ArrayQueue<T> extends AbsQueue<T> {
      * @post 0 <= depth <= MAX_DEPTH
      * @return The current amount of Ts in myQ
      */
-    public int size() {
+    public int length() {
         return depth;
     }
 

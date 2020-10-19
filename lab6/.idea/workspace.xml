@@ -19,7 +19,33 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1bfe9e64-a867-4854-be92-d5179116b496" name="Default Changelist" comment="" />
+    <list default="true" id="1bfe9e64-a867-4854-be92-d5179116b496" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/cpsc2150/MyQueue/DoubleQueueApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab5/cpsc2150/MyQueue/QueueApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../lab5/cpsc2150/MyQueue/QueueApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockDockBuildParams.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab6/cpsc2150/MyQueue/AbsQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab6/cpsc2150/MyQueue/AbsQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab6/cpsc2150/MyQueue/ArrayQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab6/cpsc2150/MyQueue/ArrayQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab6/cpsc2150/MyQueue/IQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab6/cpsc2150/MyQueue/IQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab6/cpsc2150/MyQueue/ListQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab6/cpsc2150/MyQueue/ListQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab6/cpsc2150/MyQueue/QueueApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab6/cpsc2150/MyQueue/QueueApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab6/cpsc2150/MyQueue/StringQueueApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab6/cpsc2150/MyQueue/StringQueueApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab6/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab6/makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/MyQueue/AbsQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/MyQueue/AbsQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/MyQueue/AbsQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/MyQueue/ArrayQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/MyQueue/ArrayQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/MyQueue/ArrayQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/MyQueue/IQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/MyQueue/IQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/MyQueue/IQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/MyQueue/ListQueue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/MyQueue/ListQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/MyQueue/ListQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/MyQueue/QueueApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/MyQueue/QueueApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/MyQueue/QueueApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/MyQueue/StringQueueApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/cpsc2150/MyQueue/StringQueueApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/cpsc2150/MyQueue/StringQueueApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/makefile" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +90,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../cpsc2151/lab5IntelliJ" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -75,6 +108,15 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.QueueApp">
+    <configuration name="DoubleQueueApp" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="cpsc2150.MyQueue.DoubleQueueApp" />
+      <module name="lab6" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="QueueApp" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="cpsc2150.MyQueue.QueueApp" />
       <module name="lab6" />
@@ -96,16 +138,13 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Application.DoubleQueueApp" />
       <item itemvalue="Application.StringQueueApp" />
       <item itemvalue="Application.QueueApp" />
       <item itemvalue="DockDockBuild.clean" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="DockDockBuild.clean" />
-      </list>
-    </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -119,6 +158,9 @@
       <workItem from="1590868449672" duration="343000" />
       <workItem from="1590868812992" duration="399000" />
       <workItem from="1590939459553" duration="2235000" />
+      <workItem from="1601669635994" duration="17388000" />
+      <workItem from="1601694367472" duration="132000" />
+      <workItem from="1601944559199" duration="1000" />
     </task>
     <task id="LOCAL-00001" summary="5.31 11:52am">
       <created>1590940431487</created>
@@ -138,7 +180,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -158,37 +200,87 @@
     <option name="LAST_COMMIT_MESSAGE" value="5.31 12:14pm" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590941534401">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="414" y="170" width="1138" height="758" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1601692558912">
+      <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="97" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680@0.0.1280.680" timestamp="1590941534401" />
-    <state x="368" y="143" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590939575066">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="414" y="170" width="1138" height="758" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1920.985@0.27.1920.985" timestamp="1601692558912" />
+    <state x="721" y="159" width="468" height="727" key="#com.intellij.ide.util.MemberChooser" timestamp="1601688264707">
+      <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="368" y="143" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.680@0.0.1280.680" timestamp="1590939575066" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1590941712466">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="721" y="159" width="468" height="727" key="#com.intellij.ide.util.MemberChooser/0.27.1920.985@0.27.1920.985" timestamp="1601688264707" />
+    <state x="650" y="294" width="656" height="517" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1601684228487">
+      <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1590941712466" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1590941712466">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="650" y="294" width="656" height="517" key="#com.intellij.ide.util.TreeClassChooserDialog/0.27.1920.985@0.27.1920.985" timestamp="1601684228487" />
+    <state x="667" y="396" width="585" height="263" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1601669794433">
+      <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1590941712466" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1590941712466">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="667" y="396" width="585" height="263" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.1920.985@0.27.1920.985" timestamp="1601669794433" />
+    <state x="658" y="206" key="#xdebugger.evaluate" timestamp="1601684514202">
+      <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1590941712466" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1590941712466">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="658" y="206" key="#xdebugger.evaluate/0.27.1920.985@0.27.1920.985" timestamp="1601684514202" />
+    <state x="690" y="220" width="530" height="605" key="FileChooserDialogImpl" timestamp="1601675921104">
+      <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1590941712466" />
-    <state x="150" y="0" key="SettingsEditor" timestamp="1590940032773">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="690" y="220" width="530" height="605" key="FileChooserDialogImpl/0.27.1920.985@0.27.1920.985" timestamp="1601675921104" />
+    <state width="1864" height="492" key="GridCell.Tab.0.bottom" timestamp="1601692861019">
+      <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="150" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1590940032773" />
-    <state x="234" y="74" key="Vcs.Push.Dialog.v2" timestamp="1590941678870">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state width="1864" height="492" key="GridCell.Tab.0.bottom/0.27.1920.985@0.27.1920.985" timestamp="1601692861019" />
+    <state width="1864" height="492" key="GridCell.Tab.0.center" timestamp="1601692861018">
+      <screen x="0" y="27" width="1920" height="985" />
     </state>
-    <state x="234" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1590941678870" />
+    <state width="1864" height="492" key="GridCell.Tab.0.center/0.27.1920.985@0.27.1920.985" timestamp="1601692861018" />
+    <state width="1864" height="492" key="GridCell.Tab.0.left" timestamp="1601692861018">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1864" height="492" key="GridCell.Tab.0.left/0.27.1920.985@0.27.1920.985" timestamp="1601692861018" />
+    <state width="1864" height="492" key="GridCell.Tab.0.right" timestamp="1601692861019">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1864" height="492" key="GridCell.Tab.0.right/0.27.1920.985@0.27.1920.985" timestamp="1601692861019" />
+    <state width="1864" height="492" key="GridCell.Tab.1.bottom" timestamp="1601692861019">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1864" height="492" key="GridCell.Tab.1.bottom/0.27.1920.985@0.27.1920.985" timestamp="1601692861019" />
+    <state width="1864" height="492" key="GridCell.Tab.1.center" timestamp="1601692861019">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1864" height="492" key="GridCell.Tab.1.center/0.27.1920.985@0.27.1920.985" timestamp="1601692861019" />
+    <state width="1864" height="492" key="GridCell.Tab.1.left" timestamp="1601692861019">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1864" height="492" key="GridCell.Tab.1.left/0.27.1920.985@0.27.1920.985" timestamp="1601692861019" />
+    <state width="1864" height="492" key="GridCell.Tab.1.right" timestamp="1601692861019">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state width="1864" height="492" key="GridCell.Tab.1.right/0.27.1920.985@0.27.1920.985" timestamp="1601692861019" />
+    <state x="373" y="198" width="1164" height="787" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1601672130924">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="373" y="198" width="1164" height="787" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.27.1920.985@0.27.1920.985" timestamp="1601672130924" />
+    <state x="630" y="237" width="650" height="572" key="refactoring.ChangeSignatureDialog" timestamp="1601687015985">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="630" y="237" width="650" height="572" key="refactoring.ChangeSignatureDialog/0.27.1920.985@0.27.1920.985" timestamp="1601687015985" />
+    <state x="540" y="231" key="run.anything.popup" timestamp="1601685733185">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="540" y="231" key="run.anything.popup/0.27.1920.985@0.27.1920.985" timestamp="1601685733185" />
+    <state x="539" y="26" width="840" height="1034" key="search.everywhere.popup" timestamp="1601688870744">
+      <screen x="0" y="27" width="1920" height="985" />
+    </state>
+    <state x="539" y="26" width="840" height="1034" key="search.everywhere.popup/0.27.1920.985@0.27.1920.985" timestamp="1601688870744" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

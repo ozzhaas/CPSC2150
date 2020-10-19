@@ -1,4 +1,4 @@
-/* Sterling Rich and Kellen Haas
+/*Kellen Haas
   CPSC 2150
   Lab6
   5/31/20
@@ -6,6 +6,8 @@
 
 
 package cpsc2150.MyQueue;
+
+import org.omg.PortableInterceptor.INACTIVE;
 
 import java.util.*;
 import java.lang.*;
@@ -50,7 +52,7 @@ public class StringQueueApp {
                 case "1":
                     System.out.println("What String would you like to add to the Queue?");
                     String temp = scan.nextLine();
-                    q.add(temp);
+                    q.enqueue(temp);
 
                     printQ(q);
                     break;
@@ -59,7 +61,7 @@ public class StringQueueApp {
                     if(isEmpty(q))
                         break;
 
-                    System.out.println("Next String is: " + q.pop());
+                    System.out.println("Next String is: " + q.dequeue());
 
                     printQ(q);
                     break;
@@ -92,7 +94,7 @@ public class StringQueueApp {
                     String tempInsPos = scan.nextLine();
                     Integer insPos = Integer.parseInt(tempInsPos);
 
-                    while ((insPos < 1) || (insPos > q.size()+1)) {
+                    while ((insPos < 1) || (insPos > q.length()+1)) {
                         System.out.println("Not a valid position in the Queue!\n");
                         System.out.println("What position in the Queue do you want to see?\n");
                         tempInsPos = scan.nextLine();
@@ -112,7 +114,7 @@ public class StringQueueApp {
                     String getPos = scan.nextLine();
                     Integer pos = Integer.parseInt(getPos);
 
-                    while ((pos < 1) || (pos > q.size())) {
+                    while ((pos < 1) || (pos > q.length())) {
                         System.out.println("Not a valid position in the Queue!\n");
                         System.out.println("What position in the Queue do you want to see?\n");
                         getPos = scan.nextLine();
@@ -133,7 +135,7 @@ public class StringQueueApp {
                     String tempRemPos = scan.nextLine();
                     Integer remPos = Integer.parseInt(tempRemPos);
 
-                    while ((remPos < 1) || (remPos > (q.size()+1))) {
+                    while ((remPos < 1) || (remPos > (q.length()+1))) {
                         System.out.println("Not a valid position in the Queue!\n");
                         System.out.println("What position would you like to remove from the Queue?\n");
                         tempRemPos = scan.nextLine();
@@ -153,6 +155,9 @@ public class StringQueueApp {
                 default:
                     System.out.println("\nYou must enter a number 1-8.\n");
             }
+            System.out.println("Queue is: ");
+            System.out.println(q);
+
         }
     }
 
@@ -160,12 +165,11 @@ public class StringQueueApp {
         if(isEmpty(printer))
             return;
 
-        System.out.println("Queue is: ");
 
         String holder = printer.get(1);
         System.out.print(holder);
 
-        for (int k = 2; k <= printer.size(); k++) {
+        for (int k = 2; k <= printer.length(); k++) {
             holder = printer.get(k);
             System.out.print(", " + holder);
         }
@@ -174,7 +178,7 @@ public class StringQueueApp {
     }
 
     static private boolean isEmpty(IQueue<String> myQ){
-        if(myQ.size() == 0){
+        if(myQ.length() == 0){
             System.out.println("Queue is empty!");
             printQ(myQ);
             return true;
